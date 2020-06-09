@@ -4,6 +4,9 @@ from fake_useragent import UserAgent
 import time, random, os
 import uuid
 
+s = requests.session()
+requests.adapters.DEFAULT_RETRIES = 5
+s.keep_alive = False
 ua = UserAgent()
 header = {
   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36",
@@ -17,9 +20,11 @@ def get_pid():
   return uid
 
 def get_passage(cate, link):
+  global s
   header["referer"] = sina_link[cate]
-  res = requests.get(link, headers = header)
+  res = s.get(link, headers = header)
   content = res.content
+  res.close()
   # text = res.text
   with open(str(cate)+ "/" + get_pid() + ".shtml", "wb") as f:
     f.write(content)
@@ -29,15 +34,23 @@ def get_passages(cate):
   a = []
   with open(cate_list[cate]+".txt", "r") as f:
     a = f.read().split("\n")[:-1]
-  get_passage(cate, a[0])
-  # for i in a:
-  #   get_passage(cate, i)
-  #   time.sleep(random.random())
+  # get_passage(cate, a[0])
+  c = 0
+  l = len(a)
+  x = 0
+  if cate == 0:
+    x = 495
+  for i in range(x, l):
+    c += 1
+    print("\b\b\b\b%s"%str(i).zfill(4), end="")
+    get_passage(cate, a[i])
+    time.sleep(random.random())
 
 def mainprocess():
-  for i in range(5):
-    print("\b"+str(i), end="")
+  for i in range(1, 5):
+    print("fetching passages in " + cate_list[i] + " ... ", end="")
     get_passages(i)
+    print("")
 
 if __name__ == "__main__":
   mainprocess()

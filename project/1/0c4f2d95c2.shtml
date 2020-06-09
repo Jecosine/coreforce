@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!-- [ published at 2019-04-03 12:44:15 ] -->
+
+<html>
+<head>
+     
+<meta charset="utf-8"/>
+    <title>新浪财经推出全新法律信息平台“律道” 搭设商与法的桥梁‑新浪法问-新浪网</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <base href="//n1.sinaimg.cn/finance/fawen/pc/pages/">
+    <link rel="stylesheet" charset="utf-8" href="//n2.sinaimg.cn/finance/yinhang17/normalize-min.css">
+    <link rel="stylesheet" charset="utf-8" href="../dist/common.css?ver=1554266655"/>
+    <link rel="stylesheet" charset="utf-8" href="../dist/article.css?ver=1554266655"/>
+    <!--评论样式-->
+    <link rel="stylesheet" charset="utf-8" href="//news.sina.com.cn/css/87/20140926/comment.3.css">
+    <!--顶栏登录样式-->
+    <link rel="stylesheet" charset="utf-8" href="//n3.sinaimg.cn/finance/finhttps/fawen/css/top_account.css">
+    <script>
+        var NEWS_ID = 'comos-hsxncvh7835031';
+        var DOC_ID = 'http://doc.sina.cn/?id=comos:hsxncvh7835031';//通用文档id,用于收藏模块
+        try {
+            document.domain = 'sina.com.cn';
+        } catch (e) {
+            console.log(e);
+        }
+    </script>
+</head>
+<body><!-- body code begin -->
+
+<!-- SUDA_CODE_START --> 
+<script type="text/javascript"> 
+//<!--
+(function(){var an="V=2.1.16";var ah=window,F=document,s=navigator,W=s.userAgent,ao=ah.screen,j=ah.location.href;var aD="https:"==ah.location.protocol?"https://s":"http://",ay="beacon.sina.com.cn";var N=aD+ay+"/a.gif?",z=aD+ay+"/g.gif?",R=aD+ay+"/f.gif?",ag=aD+ay+"/e.gif?",aB=aD+"beacon.sinauda.com/i.gif?";var aA=F.referrer.toLowerCase();var aa="SINAGLOBAL",Y="FSINAGLOBAL",H="Apache",P="ULV",l="SUP",aE="UOR",E="_s_acc",X="_s_tentry",n=false,az=false,B=(document.domain=="sina.com.cn")?true:false;var o=0;var aG=false,A=false;var al="";var m=16777215,Z=0,C,K=0;var r="",b="",a="";var M=[],S=[],I=[];var u=0;var v=0;var p="";var am=false;var w=false;function O(){var e=document.createElement("iframe");e.src=aD+ay+"/data.html?"+new Date().getTime();e.id="sudaDataFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function k(){var e=document.createElement("iframe");e.src=aD+ay+"/ckctl.html";e.id="ckctlFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function q(){var e=document.createElement("script");e.src=aD+ay+"/h.js";document.getElementsByTagName("head")[0].appendChild(e)}function h(aH,i){var D=F.getElementsByName(aH);var e=(i>0)?i:0;return(D.length>e)?D[e].content:""}function aF(){var aJ=F.getElementsByName("sudameta");var aR=[];for(var aO=0;aO<aJ.length;aO++){var aK=aJ[aO].content;if(aK){if(aK.indexOf(";")!=-1){var D=aK.split(";");for(var aH=0;aH<D.length;aH++){var aP=aw(D[aH]);if(!aP){continue}aR.push(aP)}}else{aR.push(aK)}}}var aM=F.getElementsByTagName("meta");for(var aO=0,aI=aM.length;aO<aI;aO++){var aN=aM[aO];if(aN.name=="tags"){aR.push("content_tags:"+encodeURI(aN.content))}}var aL=t("vjuids");aR.push("vjuids:"+aL);var e="";var aQ=j.indexOf("#");if(aQ!=-1){e=escape(j.substr(aQ+1));aR.push("hashtag:"+e)}return aR}function V(aK,D,aI,aH){if(aK==""){return""}aH=(aH=="")?"=":aH;D+=aH;var aJ=aK.indexOf(D);if(aJ<0){return""}aJ+=D.length;var i=aK.indexOf(aI,aJ);if(i<aJ){i=aK.length}return aK.substring(aJ,i)}function t(e){if(undefined==e||""==e){return""}return V(F.cookie,e,";","")}function at(aI,e,i,aH){if(e!=null){if((undefined==aH)||(null==aH)){aH="sina.com.cn"}if((undefined==i)||(null==i)||(""==i)){F.cookie=aI+"="+e+";domain="+aH+";path=/"}else{var D=new Date();var aJ=D.getTime();aJ=aJ+86400000*i;D.setTime(aJ);aJ=D.getTime();F.cookie=aI+"="+e+";domain="+aH+";expires="+D.toUTCString()+";path=/"}}}function f(D){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;return i.get(D)}catch(aH){return false}}function ar(D,aH){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;i.set(D,aH);return true}catch(aI){return false}}function L(){var aJ=15;var D=window.SUDA.etag;if(!B){return"-"}if(u==0){O();q()}if(D&&D!=undefined){w=true}ls_gid=f(aa);if(ls_gid===false||w==false){return false}else{am=true}if(ls_gid&&ls_gid.length>aJ){at(aa,ls_gid,3650);n=true;return ls_gid}else{if(D&&D.length>aJ){at(aa,D,3650);az=true}var i=0,aI=500;var aH=setInterval((function(){var e=t(aa);if(w){e=D}i+=1;if(i>3){clearInterval(aH)}if(e.length>aJ){clearInterval(aH);ar(aa,e)}}),aI);return w?D:t(aa)}}function U(e,aH,D){var i=e;if(i==null){return false}aH=aH||"click";if((typeof D).toLowerCase()!="function"){return}if(i.attachEvent){i.attachEvent("on"+aH,D)}else{if(i.addEventListener){i.addEventListener(aH,D,false)}else{i["on"+aH]=D}}return true}function af(){if(window.event!=null){return window.event}else{if(window.event){return window.event}var D=arguments.callee.caller;var i;var aH=0;while(D!=null&&aH<40){i=D.arguments[0];if(i&&(i.constructor==Event||i.constructor==MouseEvent||i.constructor==KeyboardEvent)){return i}aH++;D=D.caller}return i}}function g(i){i=i||af();if(!i.target){i.target=i.srcElement;i.pageX=i.x;i.pageY=i.y}if(typeof i.layerX=="undefined"){i.layerX=i.offsetX}if(typeof i.layerY=="undefined"){i.layerY=i.offsetY}return i}function aw(aH){if(typeof aH!=="string"){throw"trim need a string as parameter"}var e=aH.length;var D=0;var i=/(\u3000|\s|\t|\u00A0)/;while(D<e){if(!i.test(aH.charAt(D))){break}D+=1}while(e>D){if(!i.test(aH.charAt(e-1))){break}e-=1}return aH.slice(D,e)}function c(e){return Object.prototype.toString.call(e)==="[object Array]"}function J(aH,aL){var aN=aw(aH).split("&");var aM={};var D=function(i){if(aL){try{return decodeURIComponent(i)}catch(aP){return i}}else{return i}};for(var aJ=0,aK=aN.length;aJ<aK;aJ++){if(aN[aJ]){var aI=aN[aJ].split("=");var e=aI[0];var aO=aI[1];if(aI.length<2){aO=e;e="$nullName"}if(!aM[e]){aM[e]=D(aO)}else{if(c(aM[e])!=true){aM[e]=[aM[e]]}aM[e].push(D(aO))}}}return aM}function ac(D,aI){for(var aH=0,e=D.length;aH<e;aH++){aI(D[aH],aH)}}function ak(i){var e=new RegExp("^http(?:s)?://([^/]+)","im");if(i.match(e)){return i.match(e)[1].toString()}else{return""}}function aj(aO){try{var aL="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var D="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";var aQ=function(e){var aR="",aS=0;for(;aS<e.length;aS++){aR+="%"+aH(e[aS])}return decodeURIComponent(aR)};var aH=function(e){var i="0"+e.toString(16);return i.length<=2?i:i.substr(1)};var aP=function(aY,aV,aR){if(typeof(aY)=="string"){aY=aY.split("")}var aX=function(a7,a9){for(var a8=0;a8<a7.length;a8++){if(a7[a8]==a9){return a8}}return -1};var aS=[];var a6,a4,a1="";var a5,a3,a0,aZ="";if(aY.length%4!=0){}var e=/[^A-Za-z0-9\+\/\=]/g;var a2=aL.split("");if(aV=="urlsafe"){e=/[^A-Za-z0-9\-_\=]/g;a2=D.split("")}var aU=0;if(aV=="binnary"){a2=[];for(aU=0;aU<=64;aU++){a2[aU]=aU+128}}if(aV!="binnary"&&e.exec(aY.join(""))){return aR=="array"?[]:""}aU=0;do{a5=aX(a2,aY[aU++]);a3=aX(a2,aY[aU++]);a0=aX(a2,aY[aU++]);aZ=aX(a2,aY[aU++]);a6=(a5<<2)|(a3>>4);a4=((a3&15)<<4)|(a0>>2);a1=((a0&3)<<6)|aZ;aS.push(a6);if(a0!=64&&a0!=-1){aS.push(a4)}if(aZ!=64&&aZ!=-1){aS.push(a1)}a6=a4=a1="";a5=a3=a0=aZ=""}while(aU<aY.length);if(aR=="array"){return aS}var aW="",aT=0;for(;aT<aS.lenth;aT++){aW+=String.fromCharCode(aS[aT])}return aW};var aI=[];var aN=aO.substr(0,3);var aK=aO.substr(3);switch(aN){case"v01":for(var aJ=0;aJ<aK.length;aJ+=2){aI.push(parseInt(aK.substr(aJ,2),16))}return decodeURIComponent(aQ(aP(aI,"binnary","array")));break;case"v02":aI=aP(aK,"urlsafe","array");return aQ(aP(aI,"binnary","array"));break;default:return decodeURIComponent(aO)}}catch(aM){return""}}var ap={screenSize:function(){return(m&8388608==8388608)?ao.width+"x"+ao.height:""},colorDepth:function(){return(m&4194304==4194304)?ao.colorDepth:""},appCode:function(){return(m&2097152==2097152)?s.appCodeName:""},appName:function(){return(m&1048576==1048576)?((s.appName.indexOf("Microsoft Internet Explorer")>-1)?"MSIE":s.appName):""},cpu:function(){return(m&524288==524288)?(s.cpuClass||s.oscpu):""},platform:function(){return(m&262144==262144)?(s.platform):""},jsVer:function(){if(m&131072!=131072){return""}var aI,e,aK,D=1,aH=0,i=(s.appName.indexOf("Microsoft Internet Explorer")>-1)?"MSIE":s.appName,aJ=s.appVersion;if("MSIE"==i){e="MSIE";aI=aJ.indexOf(e);if(aI>=0){aK=window.parseInt(aJ.substring(aI+5));if(3<=aK){D=1.1;if(4<=aK){D=1.3}}}}else{if(("Netscape"==i)||("Opera"==i)||("Mozilla"==i)){D=1.3;e="Netscape6";aI=aJ.indexOf(e);if(aI>=0){D=1.5}}}return D},network:function(){if(m&65536!=65536){return""}var i="";i=(s.connection&&s.connection.type)?s.connection.type:i;try{F.body.addBehavior("#default#clientCaps");i=F.body.connectionType}catch(D){i="unkown"}return i},language:function(){return(m&32768==32768)?(s.systemLanguage||s.language):""},timezone:function(){return(m&16384==16384)?(new Date().getTimezoneOffset()/60):""},flashVer:function(){if(m&8192!=8192){return""}var aK=s.plugins,aH,aL,aN;if(aK&&aK.length){for(var aJ in aK){aL=aK[aJ];if(aL.description==null){continue}if(aH!=null){break}aN=aL.description.toLowerCase();if(aN.indexOf("flash")!=-1){aH=aL.version?parseInt(aL.version):aN.match(/\d+/);continue}}}else{if(window.ActiveXObject){for(var aI=10;aI>=2;aI--){try{var D=new ActiveXObject("ShockwaveFlash.ShockwaveFlash."+aI);if(D){aH=aI;break}}catch(aM){}}}else{if(W.indexOf("webtv/2.5")!=-1){aH=3}else{if(W.indexOf("webtv")!=-1){aH=2}}}}return aH},javaEnabled:function(){if(m&4096!=4096){return""}var D=s.plugins,i=s.javaEnabled(),aH,aI;if(i==true){return 1}if(D&&D.length){for(var e in D){aH=D[e];if(aH.description==null){continue}if(i!=null){break}aI=aH.description.toLowerCase();if(aI.indexOf("java plug-in")!=-1){i=parseInt(aH.version);continue}}}else{if(window.ActiveXObject){i=(new ActiveXObject("JavaWebStart.IsInstalled")!=null)}}return i?1:0}};var ad={pageId:function(i){var D=i||r,aK="-9999-0-0-1";if((undefined==D)||(""==D)){try{var aH=h("publishid");if(""!=aH){var aJ=aH.split(",");if(aJ.length>0){if(aJ.length>=3){aK="-9999-0-"+aJ[1]+"-"+aJ[2]}D=aJ[0]}}else{D="0"}}catch(aI){D="0"}D=D+aK}return D},sessionCount:function(){var e=t("_s_upa");if(e==""){e=0}return e},excuteCount:function(){return SUDA.sudaCount},referrer:function(){if(m&2048!=2048){return""}var e=/^[^\?&#]*.swf([\?#])?/;if((aA=="")||(aA.match(e))){var i=V(j,"ref","&","");if(i!=""){return escape(i)}}return escape(aA)},isHomepage:function(){if(m&1024!=1024){return""}var D="";try{F.body.addBehavior("#default#homePage");D=F.body.isHomePage(j)?"Y":"N"}catch(i){D="unkown"}return D},PGLS:function(){return(m&512==512)?h("stencil"):""},ZT:function(){if(m&256!=256){return""}var e=h("subjectid");e.replace(",",".");e.replace(";",",");return escape(e)},mediaType:function(){return(m&128==128)?h("mediaid"):""},domCount:function(){return(m&64==64)?F.getElementsByTagName("*").length:""},iframeCount:function(){return(m&32==32)?F.getElementsByTagName("iframe").length:""}};var av={visitorId:function(){var i=15;var e=t(aa);if(e.length>i&&u==0){return e}else{return}},fvisitorId:function(e){if(!e){var e=t(Y);return e}else{at(Y,e,3650)}},sessionId:function(){var e=t(H);if(""==e){var i=new Date();e=Math.random()*10000000000000+"."+i.getTime()}return e},flashCookie:function(e){if(e){}else{return p}},lastVisit:function(){var D=t(H);var aI=t(P);var aH=aI.split(":");var aJ="",i;if(aH.length>=6){if(D!=aH[4]){i=new Date();var e=new Date(window.parseInt(aH[0]));aH[1]=window.parseInt(aH[1])+1;if(i.getMonth()!=e.getMonth()){aH[2]=1}else{aH[2]=window.parseInt(aH[2])+1}if(((i.getTime()-e.getTime())/86400000)>=7){aH[3]=1}else{if(i.getDay()<e.getDay()){aH[3]=1}else{aH[3]=window.parseInt(aH[3])+1}}aJ=aH[0]+":"+aH[1]+":"+aH[2]+":"+aH[3];aH[5]=aH[0];aH[0]=i.getTime();at(P,aH[0]+":"+aH[1]+":"+aH[2]+":"+aH[3]+":"+D+":"+aH[5],360)}else{aJ=aH[5]+":"+aH[1]+":"+aH[2]+":"+aH[3]}}else{i=new Date();aJ=":1:1:1";at(P,i.getTime()+aJ+":"+D+":",360)}return aJ},userNick:function(){if(al!=""){return al}var D=unescape(t(l));if(D!=""){var i=V(D,"ag","&","");var e=V(D,"user","&","");var aH=V(D,"uid","&","");var aJ=V(D,"sex","&","");var aI=V(D,"dob","&","");al=i+":"+e+":"+aH+":"+aJ+":"+aI;return al}else{return""}},userOrigin:function(){if(m&4!=4){return""}var e=t(aE);var i=e.split(":");if(i.length>=2){return i[0]}else{return""}},advCount:function(){return(m&2==2)?t(E):""},setUOR:function(){var aL=t(aE),aP="",i="",aO="",aI="",aM=j.toLowerCase(),D=F.referrer.toLowerCase();var aQ=/[&|?]c=spr(_[A-Za-z0-9]{1,}){3,}/;var aK=new Date();if(aM.match(aQ)){aO=aM.match(aQ)[0]}else{if(D.match(aQ)){aO=D.match(aQ)[0]}}if(aO!=""){aO=aO.substr(3)+":"+aK.getTime()}if(aL==""){if(t(P)==""){aP=ak(D);i=ak(aM)}at(aE,aP+","+i+","+aO,365)}else{var aJ=0,aN=aL.split(",");if(aN.length>=1){aP=aN[0]}if(aN.length>=2){i=aN[1]}if(aN.length>=3){aI=aN[2]}if(aO!=""){aJ=1}else{var aH=aI.split(":");if(aH.length>=2){var e=new Date(window.parseInt(aH[1]));if(e.getTime()<(aK.getTime()-86400000*30)){aJ=1}}}if(aJ){at(aE,aP+","+i+","+aO,365)}}},setAEC:function(e){if(""==e){return}var i=t(E);if(i.indexOf(e+",")<0){i=i+e+","}at(E,i,7)},ssoInfo:function(){var D=unescape(aj(t("sso_info")));if(D!=""){if(D.indexOf("uid=")!=-1){var i=V(D,"uid","&","");return escape("uid:"+i)}else{var e=V(D,"u","&","");return escape("u:"+unescape(e))}}else{return""}},subp:function(){return t("SUBP")}};var ai={CI:function(){var e=["sz:"+ap.screenSize(),"dp:"+ap.colorDepth(),"ac:"+ap.appCode(),"an:"+ap.appName(),"cpu:"+ap.cpu(),"pf:"+ap.platform(),"jv:"+ap.jsVer(),"ct:"+ap.network(),"lg:"+ap.language(),"tz:"+ap.timezone(),"fv:"+ap.flashVer(),"ja:"+ap.javaEnabled()];return"CI="+e.join("|")},PI:function(e){var i=["pid:"+ad.pageId(e),"st:"+ad.sessionCount(),"et:"+ad.excuteCount(),"ref:"+ad.referrer(),"hp:"+ad.isHomepage(),"PGLS:"+ad.PGLS(),"ZT:"+ad.ZT(),"MT:"+ad.mediaType(),"keys:","dom:"+ad.domCount(),"ifr:"+ad.iframeCount()];return"PI="+i.join("|")},UI:function(){var e=["vid:"+av.visitorId(),"sid:"+av.sessionId(),"lv:"+av.lastVisit(),"un:"+av.userNick(),"uo:"+av.userOrigin(),"ae:"+av.advCount(),"lu:"+av.fvisitorId(),"si:"+av.ssoInfo(),"rs:"+(n?1:0),"dm:"+(B?1:0),"su:"+av.subp()];return"UI="+e.join("|")},EX:function(i,e){if(m&1!=1){return""}i=(null!=i)?i||"":b;e=(null!=e)?e||"":a;return"EX=ex1:"+i+"|ex2:"+e},MT:function(){return"MT="+aF().join("|")},V:function(){return an},R:function(){return"gUid_"+new Date().getTime()}};function ax(){var aK="-",aH=F.referrer.toLowerCase(),D=j.toLowerCase();if(""==t(X)){if(""!=aH){aK=ak(aH)}at(X,aK,"","weibo.com")}var aI=/weibo.com\/reg.php/;if(D.match(aI)){var aJ=V(unescape(D),"sharehost","&","");var i=V(unescape(D),"appkey","&","");if(""!=aJ){at(X,aJ,"","weibo.com")}at("appkey",i,"","weibo.com")}}function d(e,i){G(e,i)}function G(i,D){D=D||{};var e=new Image(),aH;if(D&&D.callback&&typeof D.callback=="function"){e.onload=function(){clearTimeout(aH);aH=null;D.callback(true)}}SUDA.img=e;e.src=i;aH=setTimeout(function(){if(D&&D.callback&&typeof D.callback=="function"){D.callback(false);e.onload=null}},D.timeout||2000)}function x(e,aH,D,aI){SUDA.sudaCount++;if(!av.visitorId()&&!L()){if(u<3){u++;setTimeout(x,500);return}}var i=N+[ai.V(),ai.CI(),ai.PI(e),ai.UI(),ai.MT(),ai.EX(aH,D),ai.R()].join("&");G(i,aI)}function y(e,D,i){if(aG||A){return}if(SUDA.sudaCount!=0){return}x(e,D,i)}function ab(e,aH){if((""==e)||(undefined==e)){return}av.setAEC(e);if(0==aH){return}var D="AcTrack||"+t(aa)+"||"+t(H)+"||"+av.userNick()+"||"+e+"||";var i=ag+D+"&gUid_"+new Date().getTime();d(i)}function aq(aI,e,i,aJ){aJ=aJ||{};if(!i){i=""}else{i=escape(i)}var aH="UATrack||"+t(aa)+"||"+t(H)+"||"+av.userNick()+"||"+aI+"||"+e+"||"+ad.referrer()+"||"+i+"||"+(aJ.realUrl||"")+"||"+(aJ.ext||"");var D=ag+aH+"&gUid_"+new Date().getTime();d(D,aJ)}function aC(aK){var i=g(aK);var aI=i.target;var aH="",aL="",D="";var aJ;if(aI!=null&&aI.getAttribute&&(!aI.getAttribute("suda-uatrack")&&!aI.getAttribute("suda-actrack")&&!aI.getAttribute("suda-data"))){while(aI!=null&&aI.getAttribute&&(!!aI.getAttribute("suda-uatrack")||!!aI.getAttribute("suda-actrack")||!!aI.getAttribute("suda-data"))==false){if(aI==F.body){return}aI=aI.parentNode}}if(aI==null||aI.getAttribute==null){return}aH=aI.getAttribute("suda-actrack")||"";aL=aI.getAttribute("suda-uatrack")||aI.getAttribute("suda-data")||"";sudaUrls=aI.getAttribute("suda-urls")||"";if(aL){aJ=J(aL);if(aI.tagName.toLowerCase()=="a"){D=aI.href}opts={};opts.ext=(aJ.ext||"");aJ.key&&SUDA.uaTrack&&SUDA.uaTrack(aJ.key,aJ.value||aJ.key,D,opts)}if(aH){aJ=J(aH);aJ.key&&SUDA.acTrack&&SUDA.acTrack(aJ.key,aJ.value||aJ.key)}}if(window.SUDA&&Object.prototype.toString.call(window.SUDA)==="[object Array]"){for(var Q=0,ae=SUDA.length;Q<ae;Q++){switch(SUDA[Q][0]){case"setGatherType":m=SUDA[Q][1];break;case"setGatherInfo":r=SUDA[Q][1]||r;b=SUDA[Q][2]||b;a=SUDA[Q][3]||a;break;case"setPerformance":Z=SUDA[Q][1];break;case"setPerformanceFilter":C=SUDA[Q][1];break;case"setPerformanceInterval":K=SUDA[Q][1]*1||0;K=isNaN(K)?0:K;break;case"setGatherMore":M.push(SUDA[Q].slice(1));break;case"acTrack":S.push(SUDA[Q].slice(1));break;case"uaTrack":I.push(SUDA[Q].slice(1));break}}}aG=(function(D,i){if(ah.top==ah){return false}else{try{if(F.body.clientHeight==0){return false}return((F.body.clientHeight>=D)&&(F.body.clientWidth>=i))?false:true}catch(aH){return true}}})(320,240);A=(function(){return false})();av.setUOR();var au=av.sessionId();window.SUDA=window.SUDA||[];SUDA.sudaCount=SUDA.sudaCount||0;SUDA.log=function(){x.apply(null,arguments)};SUDA.acTrack=function(){ab.apply(null,arguments)};SUDA.uaTrack=function(){aq.apply(null,arguments)};U(F.body,"click",aC);window.GB_SUDA=SUDA;GB_SUDA._S_pSt=function(){};GB_SUDA._S_acTrack=function(){ab.apply(null,arguments)};GB_SUDA._S_uaTrack=function(){aq.apply(null,arguments)};window._S_pSt=function(){};window._S_acTrack=function(){ab.apply(null,arguments)};window._S_uaTrack=function(){aq.apply(null,arguments)};window._S_PID_="";if(!window.SUDA.disableClickstream){y()}try{k()}catch(T){}})();
+//-->
+</script> 
+<noScript> 
+<div style='position:absolute;top:0;left:0;width:0;height:0;visibility:hidden'><img width=0 height=0 src='//beacon.sina.com.cn/a.gif?noScript' border='0' alt='' /></div> 
+</noScript> 
+<!-- SUDA_CODE_END -->
+
+<!-- SSO_GETCOOKIE_START -->
+<script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.getSinaCookie=function(){function dc(u){if(u==undefined){return""}var decoded=decodeURIComponent(u);return decoded=="null"?"":decoded}function ps(str){var arr=str.split("&");var arrtmp;var arrResult={};for(var i=0;i<arr.length;i++){arrtmp=arr[i].split("=");arrResult[arrtmp[0]]=dc(arrtmp[1])}return arrResult}function gC(name){var Res=eval("/"+name+"=([^;]+)/").exec(document.cookie);return Res==null?null:Res[1]}var sup=dc(gC("SUP"));if(!sup){sup=dc(gC("SUR"))}if(!sup){return null}return ps(sup)};</script>
+<!-- SSO_GETCOOKIE_END -->
+
+<script type="text/javascript">new function(r,s,t){this.a=function(n,t,e){if(window.addEventListener){n.addEventListener(t,e,false);}else if(window.attachEvent){n.attachEvent("on"+t,e);}};this.b=function(f){var t=this;return function(){return f.apply(t,arguments);};};this.c=function(){var f=document.getElementsByTagName("form");for(var i=0;i<f.length;i++){var o=f[i].action;if(this.r.test(o)){f[i].action=o.replace(this.r,this.s);}}};this.r=r;this.s=s;this.d=setInterval(this.b(this.c),t);this.a(window,"load",this.b(function(){this.c();clearInterval(this.d);}));}(/http:\/\/www\.google\.c(om|n)\/search/, "http://keyword.sina.com.cn/searchword.php", 250);</script>
+<!-- body code end -->
+
+<!--顶栏导航 start-->
+<div class="m-top-nav">
+    <div class="m-cont">
+        <a class="m-top-logo" href="http://finance.sina.com.cn/" target="_blank">新浪财经</a>
+        <div class="m-top-links"><a href="http://finance.sina.com.cn/">财经首页</a>&nbsp;|&nbsp;<a
+                href="http://www.sina.com.cn/">新浪首页</a>&nbsp;|&nbsp;<a href="http://news.sina.com.cn/guide/">新浪导航</a>
+        </div>
+        <div class="m-top-login">
+            <!-- 顶部导航登录 开始 -->
+            <div class="sina-top-bar-user TAP14" top-node-type="user" top-data="auto" id="SI_User"
+                 style="float: right;">
+                <div class="ac-rgst">
+                    <a target="_blank" href="https://login.sina.com.cn/signup/signup?entry=sports" class="msg-link"
+                       suda-uatrack="key=index_to&value=login_click">注册</a>
+                </div>
+                <div class="ac-login">
+                    <div node-type="outer" class="ac-login-cnt">
+                        <a href="#0" node-type="login_btn" class="ac-login-cnt"><span class="thumb"><img
+                                src="//i.sso.sina.com.cn/images/login/thumb_default.png"></span><span
+                                class="log-links">登录</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 顶部导航登录 结束 -->
+        </div>
+    </div>
+</div>
+<!--顶栏导航 end-->
+
+<!--横幅 start-->
+<a href='http://finance.sina.com.cn/fawen/' target="_blank">
+<div class="banner">
+    <h1 class="m-cont">新浪财经“法问”栏目，寻律问法，结构财经大事</h1>
+</div>
+</a>
+<!--横幅 end-->
+
+<!--主体 start-->
+<div class="main m-cont">
+    <!--栏目 start-->
+    <div class="page-columns clearfix">
+        <!--左侧栏目 start-->
+        <div class="page-col-left">
+            <!--正文 start-->
+            <div class="part m-article">
+				
+                <!--文章头部容器 start-->
+                		 <div class="m-atc-header">
+                    <h1 class="m-atc-title">新浪财经推出全新法律信息平台“律道” 搭设商与法的桥梁</h1>
+                    <div class="m-atc-info">
+                        <span class="atc-date">2019-04-03 09:21:00</span>
+                        <span class="atc-author">作者：新浪法问</span>
+                        <span class="atc-cmt" id="atc_cmt"></span>
+                        <a class="atc-add-top" href="javascript:;" id="atc_add_1">收藏本文</a>
+                        <div class="font-changer" id="atc_font_changer">
+                            <span class="size-down disabled">A-</span>
+                            <span class="size-up">A+</span>
+                        </div>
+                    </div>
+          </div>
+                <!--文章头部容器 end-->
+                <!--文章内容容器 start-->
+                <div class="m-atc-body">
+                    <!-- 原始正文start -->
+					<div class="m-atc-original" id="m_atc_original">
+                    	<p>　　新浪财经讯 4月3日消息，新浪网高级副总裁邓庆旭今日在2019年CBLJ高峰论坛上宣布，新浪财经隆重推出全新的法律信息平台--律道。<span style="font-family: KaiTi_GB2312, KaiTi;"><em>lvdao.sina.com.cn</em></span></p>
+<p>　　随着经济的蓬勃发展，中国的商业社会实现了跨越式的前进，但同时也面临层出不穷的新挑战。其中，法律风险就是每一位市场参与者需要正视的挑战。在法律意识全面提高的社会环境下，个人和企业对专业法律服务的需求与日俱增。</p>
+<p>　　邓庆旭表示， “契约精神是商业社会的基石，法律是维护契约精神的根本，我们深以为然。健全、完善的法律体系和成熟的法律服务市场，能为中国商业社会的长远发展保驾护航。”</p>
+<p>　　作为在中国市场具有广泛影响力的财经资讯平台，过去20年新浪财经一直致力于为受众提供最权威、及时的商业资讯。</p>
+<p>　　在实现了股票、债券、基金、期货、信托、理财、管理等多领域面向个人和企业的信息覆盖后，新浪财经希望在商业法律领域为受众带来同样权威、专业、及时的信息服务，并打造了律道这一开放式的法律信息平台。</p>
+<p>　　新浪律道将汇集全国商业法律领域的律师职业信息和律所官方信息，全方位网罗业内一线资讯、权威观点和影响力案例。新浪律道上线当日，已有数十家知名律所和百余位专业律师入驻平台，成为新浪律道的内容合作伙伴，提供最专业的法律见解。</p>
+<p>　　未来，律道将继续拓展平台智库，并且与新浪财经旗下原创频道新浪法问将形成合力，搭设商界与法律界的信息桥梁，共建商业法律新型大数据生态。</p>
+<div class="img_wrapper"><img src="//n.sinaimg.cn/finance/transform/728/w550h978/20190403/9Kwq-hvcmeux8658378.jpg" alt="" data-link=""><span class="img_descr"></span></div>					</div>
+                    <!--原始正文 end-->
+                    <!--栏目推广 start-->
+                    <div class="m-atc-promote" id="m_atc_promote">
+                        <p>欢迎关注《法问》官方微博和微信公众号，阅读更多精彩文章。专业律师团为您解读财经大事件。读者爆料、法律咨询、律所投稿和意见反馈欢迎发送至fawen@staff.sina.com.cn，期待与您交流。</p>
+                        <img src="../images/promote.png" alt="欢迎关注">
+                    </div>
+                    <!--栏目推广 end-->
+                    <!--关键词 start-->
+                    <div class="m-atc-keyword" id="m_atc_keyword">
+	 文章关键词：
+	</div>
+                    <!--关键词 end-->
+                </div>
+                <!--文章内容容器 end-->
+                <!--文章底部工具 start-->
+                <div class="m-atc-footer">
+                    <div class="m-atc-menu" id="atc_menu">
+                        <a class="atc-add-bottom" href="javascript:;" id="atc_add_2">收藏</a>
+                        <span id="bottom_share">
+                            <a class="atc-share-weibo" href="javascript:;" data-share="weibo">分享微博</a>
+                            <a class="atc-share-weixin" href="javascript:;" data-share="weixin">分享微信</a>
+                        </span>
+                    </div>
+                </div>
+                <!--文章底部工具 start-->
+            </div>
+            <!--正文 end-->
+
+            <!--正文页评论 start-->
+            <div class="part comment">
+                <!--<h2 class="p-tt"><span>回音谷</span></h2>
+                <div class="comment-tip">带上话题＃提问＃参与回复，您的疑问将有机会得到权威律师的专业解答哦！</div>-->
+                <div class="comment-cont" id="sina_comment"></div>
+            </div>
+            <!--正文页评论 end-->
+
+            <!--推荐阅读 start-->
+			
+ <div class="part m-recommend">
+                <h2 class="p-tt">
+                    <span>推荐阅读</span>
+                </h2>
+                <div class="p-cont">
+                    <ul class="m-rank">
+                                           </ul>
+                </div>
+</div>
+            <!--推荐阅读 end-->
+        </div>
+        <!--左侧栏目 end-->
+        <!--右侧栏目 start-->
+        <div class="page-col-right">
+            <!--作者简介 start-->
+				<div class="blk about-author">
+		 <div class="a-info">
+			 <div class="a-poster">
+								<img src="//n.sinaimg.cn/finance/crawl/360/w180h180/20180416/_3W9-fzcyxmv2460023.jpg" alt="新浪法问">
+							</div>
+							<div class="a-text">
+								<h2>作者简介：</h2>
+								<a href="https://weibo.com/xinlangfawen?profile_ftype=1&is_all=1#_0" target="_blank">新浪法问</a>
+								<p>新浪财经《法问》栏目官方微博。</p>
+			</div>
+		 </div>
+		 <div class="a-act">
+			<a class="a-weibo" href="https://weibo.com/xinlangfawen?profile_ftype=1&is_all=1#_0">新浪微博</a>
+		 </div>
+	</div>
+            <!--作者简介 end-->
+			
+            <!--一周热文 start-->
+			
+<div class="blk hot-article">
+                <h2 class="blk-tt"><span>一周</span><span>热文</span></h2>
+                <div class="blk-cont">
+                    <ul>
+									<li class="rank-item rank-item-top">
+			<a target="_blank" href="http://finance.sina.com.cn/fawen/yx/2019-04-03/doc-ihsxncvh7835031.shtml"><span>1</span>新浪财经推出全新法律信息平台“律道” 搭设商与法的桥梁</a>
+			</li>			<li class="rank-item rank-item-top">
+			<a target="_blank" href="http://finance.sina.com.cn/fawen/yx/2019-03-30/doc-ihsxncvh6794415.shtml"><span>2</span>原健力宝副总外逃17年后归案：中国魔水贪污案始末</a>
+			</li>			<li class="rank-item rank-item-top">
+			<a target="_blank" href="http://finance.sina.com.cn/fawen/dz/2019-03-18/doc-ihsxncvh3471615.shtml"><span>3</span>AI技术换脸杨幂视频的法律思考：侵权赔偿金额可能超乎你想象</a>
+			</li>			<li class="rank-item">
+			<a target="_blank" href="http://finance.sina.com.cn/fawen/2019-03-16/doc-ihrfqzkc4307652.shtml"><span>4</span>315曝光的714高炮砍头息并不合法 为什么还如此猖獗？</a>
+			</li>			<li class="rank-item">
+			<a target="_blank" href="http://finance.sina.com.cn/fawen/yx/2019-03-14/doc-ihsxncvh2469615.shtml"><span>5</span>法问律所访谈录|通商律所：科创板上市公司监管要点有哪些？</a>
+			</li>			<li class="rank-item">
+			<a target="_blank" href="http://finance.sina.com.cn/fawen/2019-03-13/doc-ihrfqzkc3601002.shtml"><span>6</span>法问律所访谈录|天达共和律所：GDPR如何影响中国电商？</a>
+			</li>			<li class="rank-item">
+			<a target="_blank" href="http://finance.sina.com.cn/fawen/yx/2019-03-12/doc-ihsxncvh1956921.shtml"><span>7</span>法问律所访谈录|瀛泰律所：金融纠纷应尽早申请财产保全</a>
+			</li>			<li class="rank-item">
+			<a target="_blank" href="http://finance.sina.com.cn/fawen/yx/2019-03-12/doc-ihsxncvh1813614.shtml"><span>8</span>怀疑商品致病如何维权？律师：集体诉讼降低举证难度</a>
+			</li>			<li class="rank-item">
+			<a target="_blank" href="http://finance.sina.com.cn/fawen/other/2019-03-11/doc-ihrfqzkc3040392.shtml"><span>9</span>2019年CBLJ高峰论坛将在京举办 云集商业法律界精英</a>
+			</li>			<li class="rank-item">
+			<a target="_blank" href="http://finance.sina.com.cn/fawen/yx/2019-03-11/doc-ihrfqzkc2931447.shtml"><span>10</span>法问律所访谈录|锦天城律所：重视金融监管变化带来的法律风险</a>
+			</li>                    </ul>
+                </div>
+</div>
+            <!--一周热文 end-->
+            <!--精选问答 start-->
+								<div class="blk hot-qna">
+							<h2 class="blk-tt">
+							<span>精选</span>
+							<span>问答</span>
+							<a href="http://finance.sina.com.cn/fawen/wq.shtml" target="_blank">更多&gt;</a>
+							</h2>
+							<div class="blk-cont">
+														 <a class="qna-item" target="_blank" href="http://finance.sina.com.cn/fawen/bx/2018-07-31/doc-ihhacrce3128542.shtml">
+									<div class="qna-item-q"><span>Q</span>长春长生高俊芳面临什么刑罚？</div>
+									<div class="qna-item-a"><span>A</span>据人民网近日报道，长春新区公安分局以涉嫌生产、销售劣药罪，对长春长生生物科技有限责任公司董事长高某芳等18名犯罪嫌疑人向检察机关提请批准逮捕。</div>
+						 </a>						 <a class="qna-item" target="_blank" href="http://finance.sina.com.cn/fawen/bx/2018-07-12/doc-ihfefkqr0675112.shtml">
+									<div class="qna-item-q"><span>Q</span>父亲失信儿子该被连坐？</div>
+									<div class="qna-item-a"><span>A</span>一则“儿子考上知名大学 差点因爸爸的失信行为无法被录取”的新闻近日引发网友热议。法律上虽然没有父债子偿这个事情，但是录用什么学生学校说了算，毕竟教育资源是有限的。</div>
+						 </a>
+							</div>
+					</div>
+            <!--精选问答 end-->
+            <!--联系我们 start-->
+			<div class="blk contact-us">
+                <h2 class="blk-tt"><span>联系</span><span>我们</span></h2>
+                <div class="blk-cont">
+                    <ul class="text-wrap">
+                        <li>新浪法问</li>
+                        <li>联系人：陈永乐</li>
+                        <li>电话：156-5262-0656</li>
+                        <li>邮箱：<a target="_blank" href="mailto:fawen@staff.sina.com.cn" title="fawen@staff.sina.com.cn">点击发送邮件</a></li>
+                        <li>北京市海淀区西北旺东路新浪总部大厦</li>
+                    </ul>
+                    <div class="qr-wrap">
+                        <img src="../images/fawen_weixin.jpg" alt="新浪法问公众号">
+                    </div>
+                    <div class="qr-wrap">
+                        <img src="../images/fawen_weibo.jpg" alt="新浪法问微博"></div>
+                </div>
+            </div>
+            <!--联系我们 end-->
+        </div>
+        <!--右侧栏目 start-->
+    </div>
+    <!--栏目 end-->
+</div>
+<!--主体 end-->
+<!-- 页脚 start -->
+<div class="footer m-cont">
+    <div class="uni-footer">
+        <p>
+            <a target="_blank" href="http://corp.sina.com.cn/chn/" class="sinatail">新浪简介</a> |
+            <a target="_blank" href="http://corp.sina.com.cn/eng/" class="sinatail">About Sina</a> |
+            <a target="_blank" href="http://emarketing.sina.com.cn/" class="sinatail">广告服务</a> |
+            <a target="_blank" href="http://corp.sina.com.cn/chn/sina_job.html" class="sinatail">招聘信息</a> |
+            <a target="_blank" href="http://www.sina.com.cn/intro/lawfirm.shtml" class="sinatail">网站律师</a> |
+            <a target="_blank" href="http://english.sina.com" class="sinatail">SINA English</a> |
+            <a target="_blank" href="https://login.sina.com.cn/signup/signup.php" class="sinatail">通行证注册</a> |
+            <a target="_blank" href="http://tech.sina.com.cn/focus/sinahelp.shtml" class="sinatail">产品答疑</a>
+        </p>
+
+        <p>Copyright &#169; 1996 - 2017 SINA Corporation, All Rights Reserved</p>
+
+        <p>
+            新浪公司 <a target="_blank" href="http://www.sina.com.cn/intro/copyright.shtml" class="sinatail">版权所有</a>
+        </p>
+    </div>
+</div>
+<!-- 页脚 end -->
+
+<script charset="utf-8" src="//news.sina.com.cn/268/2015/0112/jquery.newest.js"></script>
+<script charset="utf-8" src="//n.sinaimg.cn/finance/mina_vote/util.js"></script>
+<!-- 登录 start -->
+<script charset="utf-8" src="//n.sinaimg.cn/finance/finhttps/fawen/js/top.js"></script>
+<script charset="utf-8" src="//news.sina.com.cn/sso/user_panel_new_version.js"></script>
+<script type="text/javascript">
+    //顶通登录初始化
+    (function (Topbar) {
+        Topbar.user.init(document.getElementById('SI_User'), {
+            // entry 默认为 account，各频道不一样，可向通行证@龚翼 申请
+            entry: 'finance',
+            // 登录成功
+            login_success: function () {
+            },
+            // 退出成功
+            logout_success: function () {
+            },
+            // 获取微博信息
+            getWeiboInfo: function (info) {
+                //console.log(info);
+            }
+        });
+        // 显示登录框可使用以下方法，当然这个方法需要在登录完成初始化之后才起作用的
+        // Topbar.user.showLoginLayer();
+    })(window.__SinaTopBar__);
+</script>
+<!-- 登录 end -->
+<!-- 正文和问答通用JS start-->
+<script charset="utf-8" src="../dist/article-common.js"></script>
+<!-- 正文和问答通用JS end-->
+<!-- 分享 start -->
+<script charset="utf-8" src="//n.sinaimg.cn/finance/share_component/share.min.js?ver=1554266656"></script>
+<script type="text/javascript">
+    (function () {
+        new FnShare('#bottom_share', {
+            url: location.href.split('#')[0],
+            wxurl: 'http://fawen.sina.cn/article/view/hsxncvh7835031',//移动端页面地址
+            img: 'http://n.sinaimg.cn/finance/fawen/pc/images/page_logo.png',
+            title: '@新浪法问 @新浪财经 #新浪法问#' + '新浪财经推出全新法律信息平台“律道” 搭设商与法的桥梁' + '新浪法问，寻律问法，解构财经大事。',//微博分享题目
+            security: 'https'
+        });
+    })();
+</script>
+<!-- 分享 end -->
+<!-- body code begin -->
+<script type="text/javascript">
+(function(){
+    if(window.top !== window.self || window._thereIsNoRealTimeMessage){return};
+    var script = document.createElement('script');
+    script.setAttribute('charset', 'gb2312');
+    script.src = '//news.sina.com.cn/js/694/2012/0830/realtime.js?ver=1.5.1';
+    document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+
+<!-- SSO_UPDATECOOKIE_START -->
+<script type="text/javascript">var sinaSSOManager=sinaSSOManager||{};sinaSSOManager.q=function(b){if(typeof b!="object"){return""}var a=new Array();for(key in b){a.push(key+"="+encodeURIComponent(b[key]))}return a.join("&")};sinaSSOManager.es=function(f,d,e){var c=document.getElementsByTagName("head")[0];var a=document.getElementById(f);if(a){c.removeChild(a)}var b=document.createElement("script");if(e){b.charset=e}else{b.charset="gb2312"}b.id=f;b.type="text/javascript";d+=(/\?/.test(d)?"&":"?")+"_="+(new Date()).getTime();b.src=d;c.appendChild(b)};sinaSSOManager.doCrossDomainCallBack=function(a){sinaSSOManager.crossDomainCounter++;document.getElementsByTagName("head")[0].removeChild(document.getElementById(a.scriptId))};sinaSSOManager.crossDomainCallBack=function(a){if(!a||a.retcode!=0){return false}var d=a.arrURL;var b,f;var e={callback:"sinaSSOManager.doCrossDomainCallBack"};sinaSSOManager.crossDomainCounter=0;if(d.length==0){return true}for(var c=0;c<d.length;c++){b=d[c];f="ssoscript"+c;e.scriptId=f;b=b+(/\?/.test(b)?"&":"?")+sinaSSOManager.q(e);sinaSSOManager.es(f,b)}};sinaSSOManager.updateCookieCallBack=function(c){var d="ssoCrossDomainScriptId";var a="http://login.sina.com.cn/sso/crossdomain.php";if(c.retcode==0){var e={scriptId:d,callback:"sinaSSOManager.crossDomainCallBack",action:"login",domain:"sina.com.cn"};var b=a+"?"+sinaSSOManager.q(e);sinaSSOManager.es(d,b)}else{}};sinaSSOManager.updateCookie=function(){var g=1800;var p=7200;var b="ssoLoginScript";var h=3600*24;var i="sina.com.cn";var m=1800;var l="http://login.sina.com.cn/sso/updatetgt.php";var n=null;var f=function(e){var r=null;var q=null;switch(e){case"sina.com.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"sina.cn":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break;case"51uc.com":q=sinaSSOManager.getSinaCookie();if(q){r=q.et}break}return r};var j=function(){try{return f(i)}catch(e){return null}};try{if(g>5){if(n!=null){clearTimeout(n)}n=setTimeout("sinaSSOManager.updateCookie()",g*1000)}var d=j();var c=(new Date()).getTime()/1000;var o={};if(d==null){o={retcode:6102}}else{if(d<c){o={retcode:6203}}else{if(d-h+m>c){o={retcode:6110}}else{if(d-c>p){o={retcode:6111}}}}}if(o.retcode!==undefined){return false}var a=l+"?callback=sinaSSOManager.updateCookieCallBack";sinaSSOManager.es(b,a)}catch(k){}return true};sinaSSOManager.updateCookie();</script>
+<!-- SSO_UPDATECOOKIE_END -->
+
+<!-- body code end -->
+
+</body>
+</html>
