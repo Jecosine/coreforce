@@ -23,8 +23,9 @@
               </el-input>
             </div>
           </el-col>
-          <el-col :span="6"></el-col>
-
+          <el-col :span="6">
+            <div id="avatar-container"></div>
+          </el-col>
         </el-row>
         <el-menu id="sider-container" 
           :collapse="collSider" 
@@ -46,7 +47,10 @@
           <el-menu-item index="5" >
             <span slot="title" class="sider-item"><i class="el-icon-bell bold primary-color"></i>消息通知</span>
           </el-menu-item>
-          <el-submenu index="6">
+          <el-menu-item index="6" >
+            <span slot="title" class="sider-item"><i class="el-icon-setting bold primary-color"></i>设置</span>
+          </el-menu-item>
+          <el-submenu index="7">
             <span slot="title"  class="sider-item">
               <i class="el-icon-takeaway-box bold primary-color"></i>分类
             </span>
@@ -55,6 +59,7 @@
             <el-menu-item index="5-3" ><span class="sider-item"><i class="el-icon-school bold primary-color"></i>教育</span></el-menu-item>
             <el-menu-item index="5-3" ><span class="sider-item"><i class="el-icon-football bold primary-color"></i>体育</span></el-menu-item>
           </el-submenu>
+
         </el-menu>
       </el-header>
       <el-main id="main-container">
