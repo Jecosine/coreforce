@@ -24,18 +24,22 @@
             </div>
           </el-col>
           <el-col :span="6">
-            <div id="avatar-container">
+            <div id="avatar-container" @mouseenter.self="userInfoCol=false" @mouseleave.self="userInfoCol=true">
               <el-avatar fit="fill" :size="50" src="res/img/avatar.jpg"></el-avatar>
+              <div id="user-info-container">
+                <el-menu
+                  id="user-info-menu"
+                  mode="vertical"
+                  :collapse="uicConst"
+                  v-show="!userInfoCol">
+                  <el-menu-item index="1"><i class="el-icon-user-solid  primary-color"></i>个人中心</el-menu-item>
+                  <el-menu-item index="2"><i class="el-icon-s-flag  primary-color"></i>浏览历史</el-menu-item>
+                  <el-menu-item index="3"><i class="el-icon-s-order  primary-color"></i>我的订阅</el-menu-item>
+                  <el-menu-item index="4"><i class="el-icon-s-tools  primary-color"></i>设定</el-menu-item>
+                </el-menu>
+              </div>
             </div>
-            <div id="user-info-container">
-              <el-menu
-                mode="vertical"
-                :collapse="userInfoCol">
-                <el-menu-item index="1"><i class="el-icon-user-solid  primary-color"></i>个人中心</el-menu-item>
-                <el-menu-item index="2"><i class="el-icon-s-flag  primary-color"></i>浏览历史</el-menu-item>
-                <el-menu-item index="3"><i class="el-icon-s-tools  primary-color"></i>设定</el-menu-item>
-              </el-menu>
-            </div>
+            
           </el-col>
         </el-row>
         <el-menu id="sider-container" 
@@ -91,7 +95,9 @@
             visible: false,
             searchInput: "",
             collSider: false,
-            activeTag: ""
+            activeTag: "",
+            userInfoCol: true,
+            uicConst: true
           }
         },
         methods: {
