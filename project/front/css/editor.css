@@ -71,3 +71,24 @@
 #preview-title {
   z-index: 999;
 }
+.ql-picker-label {
+  outline: none;
+  border: none;
+  text-align: center;
+  
+  vertical-align: middle;
+}
+/* .ql-toolbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  line-height: 40px;
+} */
+#info-container {
+  margin-bottom: 20px;
+}
+#main-wrapper {
+  overflow: auto;
+  /* overflow-y: scroll; */
+}
