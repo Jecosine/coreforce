@@ -1,0 +1,39 @@
+#navigation-container > .el-menu-vertical-demo:not(.el-menu--collapse) {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  height: 100%;
+  /* width: 300px; */
+  /* border: none; */
+  font-size: 20px;
+  z-index: 98;
+  /* background-color: rgba(0,0,0,0); */
+  width: 300px;
+  /* min-height: 400px; */
+}
+#navigation-container > .el-menu--collapse {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  height: 100%;
+  font-size: 20px;
+  z-index: 98;
+  /* border: none; */
+  
+  /* background-color: rgba(0,0,0,0); */
+  width: 80px;
+}
+#navigation-container > .el-menu--collapse {
+  border-radius: 0;
+}
+.el-menu-item  i,
+.el-submenu i {
+  display: inline-block;
+  padding-right: 10px;
+  color: #303133;
+}
+
+#sider-container > .el-menu-item i,
+#sider-container > .el-submenu i {
+  margin-left: 20px;
+}
