@@ -396,7 +396,7 @@
             var that = this;
             var tempdata;
             tempdata = $.ajax({
-              url: "/res/json/data.json",
+              url: "/todo/getAll",
               method: "GET",
               async: false
             }).then((res)=>{

@@ -137,4 +137,54 @@ public class DBConnection {
     }
   }
 
+  // todos
+  public static TodoItem getTodoItemById(Integer id) throws IOException {
+    // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+    SqlSession openSession = sqlSessionFactory.openSession();
+    TodoItem todo = null;
+    try {
+      ITodoMapper mapper = openSession.getMapper(ITodoMapper.class);
+      todo = mapper.getTodoItemById(id);
+      return todo;
+    } finally {
+        openSession.close();
+    }
+  }
+  public static List<TodoItem> getTodoItemsByTag(Integer id) throws IOException {
+    // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+    SqlSession openSession = sqlSessionFactory.openSession();
+    List<TodoItem> todos = null;
+    try {
+      ITodoMapper mapper = openSession.getMapper(ITodoMapper.class);
+      todos = mapper.getTodoItemsByTag(id);
+      return todos;
+    } finally {
+        openSession.close();
+    }
+  }
+  public static List<TodoItem> getAllTodoItems() throws IOException {
+    // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+    SqlSession openSession = sqlSessionFactory.openSession();
+    List<TodoItem> todos = null;
+    try {
+      ITodoMapper mapper = openSession.getMapper(ITodoMapper.class);
+      todos = mapper.getAllTodoItems();
+      return todos;
+    } finally {
+        openSession.close();
+    }
+  }
+
+  public static int addUser(TodoItem todo) throws IOException {
+    SqlSession openSession = sqlSessionFactory.openSession();
+    // List<Todo> todos = null;
+    try {
+      ITodoMapper mapper = openSession.getMapper(ITodoMapper.class);
+      return mapper.addTodoItem(todo);
+    } finally {
+        openSession.commit();
+        openSession.close();
+    }
+  }
+
 }

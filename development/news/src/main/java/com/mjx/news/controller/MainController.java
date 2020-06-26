@@ -34,17 +34,14 @@ public class MainController {
 	}
 
   @RequestMapping("/admin") 
-  public String mainpage(HttpServletRequest request,HttpServletResponse response) throws IOException {
+  public String mainpage(HttpServletRequest request, HttpServletResponse response) throws IOException {
     HttpSession session = request.getSession(false);
-    if(session == null) {
-      return "redirect:/adminlogin";
+    if (session != null && session.getAttribute("user") != null) {
+      System.out.println(((User)session.getAttribute("user")).getEmail());
+      return "pages/admin-todos.html";
     }
-    User user = (User)session.getAttribute("user");
-    if(user == null) {
-      return "redirect:/adminlogin";
-    } else {
-      return "index.html"; 
-    }
-  } 
+    return "redirect:/adminlogin";
+  }
 
+  // @RequestMapping("")
 }

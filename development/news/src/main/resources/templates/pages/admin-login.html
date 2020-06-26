@@ -41,32 +41,41 @@
           </el-col>
         </el-row>
       </el-header>
+      <el-dialog
+        :visible.sync="dialogVisible"
+        width="30%"
+        :before-close="handleClose">
+        <template slot="title"><i class="el-icon-error" style="color:red"></i> 警告</template>
+        <span>用户名或密码错误</span>
+        <span slot="footer" class="dialog-footer">
+          <el-button type="primary" @click="handleClose">确 定</el-button>
+        </span>
+      </el-dialog>
       <el-container id="main-container" style="background-color:rgba(0, 107, 153, 0.062)">
         <el-col :span="9"></el-col>
         <el-col :span="6" >
             <div id="form-container">
               <div id="form-title">Core Force后台系统</div>
-              <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" class="demo-ruleForm" act>
+              <el-form :model="ruleForm" status-icon  ref="ruleForm" class="demo-ruleForm" >
                 <el-form-item  prop="age">
-                  <el-input v-model.number="ruleForm.age">
+                  <el-input v-model.number="ruleForm.email">
                     <template slot="prepend">账 号</template>
                   </el-input>
                 </el-form-item>
                 <el-form-item prop="pass">
-                  <el-input type="password" v-model="ruleForm.pass" autocomplete="off">
+                  <el-input type="password" v-model="ruleForm.password" autocomplete="off">
                     <template slot="prepend" :width="200" show-password>密 码</template>
                   </el-input>
                 </el-form-item>
 
                 <el-form-item>
-                  <el-button type="primary" @click="submitForm('ruleForm')">登录</el-button>
+                  <el-button type="primary" @click="submitForm()">登录</el-button>
                   <el-button @click="resetForm('ruleForm')" style="float: right;">重置</el-button>
                 </el-form-item>
               </el-form>
             </div>
         </el-col>
         <el-col :span="9"></el-col>
-
       </el-container>
     </el-container>
     <script>
@@ -81,24 +90,48 @@
             search: '',
             userConfig: undefined,
             ruleForm: {
-            pass: '',
-            checkPass: '',
-            age: ''
-          }
+              email: '',
+              password: ''
+            },
+            dialogVisible: false
           }
         },
         methods: {
-
+          handleClose() {
+            this.ruleForm.password = "";
+            this.dialogVisible = false;
+          },
+          resetForm(formName) {
+            this.$refs[formName].resetFields();
+          },
+          submitForm() {
+            var that = this;
+            var dt = {
+                "email":that.ruleForm.email,
+                "password":that.ruleForm.password
+              };
+            $.ajax({
+              url: "/loginService",
+              type: "POST",
+              contentType: "application/json",
+              data: JSON.stringify(dt),
+              async: false
+            }).then((res)=>{
+              console.log(res);
+              if (res.status && res.status != 0)
+                that.dialogVisible = true;
+              else {
+                window.location.href = "/admin";
+              }
+            });
+          },
         },
         mounted() {
-          // this.loading = false;
         },
         created() {
           
         },
       });
-      // tb.fetchData();
-      // document.onload = () => {tb.loading = true; }
     </script>
   </body>
 </html>

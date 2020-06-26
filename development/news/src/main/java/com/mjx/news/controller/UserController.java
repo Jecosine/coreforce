@@ -14,6 +14,7 @@ import com.mjx.news.repository.*;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
 import javax.servlet.http.HttpServletRequest;
@@ -57,17 +58,31 @@ public class UserController {
     return 1;
   }
 
-  @PostMapping(value="/loginService")
-  public String login(HttpServletRequest request,HttpServletResponse response) throws IOException {
-    String email = (String)request.getAttribute("email");
-    String password = (String)request.getAttribute("password");
 
+  @ResponseBody
+  @PostMapping(value="/loginService")
+  public ResponseDataPack login(@RequestBody RequestDataPack dp, HttpServletRequest request, HttpServletResponse response) throws IOException {
+    ResponseDataPack res = new ResponseDataPack();
+    String email = (String)dp.getEmail();
+    String password = (String)dp.getPassword();
+    System.out.println(dp.getPassword());
     User user = DBConnection.getUserByEmail(email);
-    if (user.getPassword() == password) {
+    res.setStatus(-1);
+    res.setMessage("Login fail. Check your password or email.");
+    if(user == null){
+      return res;
+      // response.sendRedirect("/adminlogin");      
+    }
+
+    if (user.getPassword().equals(password)) {
       request.getSession().setAttribute("user", user);
-      return "redirect:/admin";
+      res.setStatus(0);
+      res.setMessage("Success");
+      return res;
     } else {
-      return "redirect:/adminlogin";
+      System.out.println(user.getPassword() + " " + password);
+
+      return res;
     }
   } 
 
