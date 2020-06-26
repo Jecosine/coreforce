@@ -30,13 +30,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RequestMapping("/todo")
 public class TodoController {
   @GetMapping("/getById")
-  public TodoItem getTodoItemById(@RequestParam String id) throws IOException {
+  public TodoItem getTodoItemById(@RequestParam Integer id) throws IOException {
     TodoItem user = DBConnection.getTodoItemById(id);
 		return user;
 	}
-  @GetMapping("/getByRole")
-  public List<TodoItem> getTodoItemsByRole(@RequestParam Integer id) throws IOException {
-    List<TodoItem> users = DBConnection.getTodoItemsByRole(id);
+  @GetMapping("/getByState")
+  public List<TodoItem> getTodoItemsByRole(@RequestParam int id) throws IOException {
+    List<TodoItem> users = DBConnection.getTodoItemsByState(id);
 		return users;
   }
   @GetMapping("/getAll")
@@ -46,15 +46,14 @@ public class TodoController {
   }
   @PostMapping(value="/add")
   // @ResponseBody 
-  public TodoItem addTodoItem(@RequestBody TodoItem user) throws IOException{
+  public TodoItem addTodoItem(@RequestBody TodoItem todo) throws IOException{
       //TODO: process POST request\
-      int a = DBConnection.addTodoItem(user);
-      System.out.println(user.getRealname());
-      return user;
+      int a = DBConnection.addTodoItem(todo);
+      return todo;
   }
 
   @PostMapping(value="/delete")
-  public int delTodoItem(@RequestParam String id) throws IOException{
+  public int delTodoItem(@RequestParam Integer id) throws IOException{
     return 1;
   } 
 

@@ -1,7 +1,7 @@
 package com.mjx.news.entity;
 
 public class TodoItem {
-  private Integer todoId;
+  private Integer todo_id;
   private String uid;
   private String title;
   private String startDate;
@@ -9,20 +9,6 @@ public class TodoItem {
   private int tag;
   private String content;
   private int state;
-
-    /**
-     * @return Integer return the todoId
-     */
-    public Integer getTodoId() {
-        return todoId;
-    }
-
-    /**
-     * @param todoId the todoId to set
-     */
-    public void setTodoId(Integer todoId) {
-        this.todoId = todoId;
-    }
 
     /**
      * @return String return the uid
@@ -121,6 +107,21 @@ public class TodoItem {
      */
     public void setState(int state) {
         this.state = state;
+    }
+
+
+    /**
+     * @return Integer return the todo_id
+     */
+    public Integer getTodo_id() {
+        return todo_id;
+    }
+
+    /**
+     * @param todo_id the todo_id to set
+     */
+    public void setTodo_id(Integer todo_id) {
+        this.todo_id = todo_id;
     }
 
 }

@@ -25,5 +25,4 @@ public interface ITodoMapper {
   // get todos by state
   @Select("select * from todo where state=#{state}")
   public List<TodoItem> getTodoItemsByState(int state);
-
 }

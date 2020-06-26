@@ -162,6 +162,18 @@ public class DBConnection {
         openSession.close();
     }
   }
+  public static List<TodoItem> getTodoItemsByState(Integer id) throws IOException {
+    // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+    SqlSession openSession = sqlSessionFactory.openSession();
+    List<TodoItem> todos = null;
+    try {
+      ITodoMapper mapper = openSession.getMapper(ITodoMapper.class);
+      todos = mapper.getTodoItemsByState(id);
+      return todos;
+    } finally {
+        openSession.close();
+    }
+  }
   public static List<TodoItem> getAllTodoItems() throws IOException {
     // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
     SqlSession openSession = sqlSessionFactory.openSession();
@@ -175,7 +187,7 @@ public class DBConnection {
     }
   }
 
-  public static int addUser(TodoItem todo) throws IOException {
+  public static int addTodoItem(TodoItem todo) throws IOException {
     SqlSession openSession = sqlSessionFactory.openSession();
     // List<Todo> todos = null;
     try {
