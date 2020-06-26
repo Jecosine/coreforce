@@ -49,6 +49,18 @@ public class DBConnection {
         openSession.close();
     }
   }
+  public static User getUserByEmail(String email) throws IOException {
+    // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+    SqlSession openSession = sqlSessionFactory.openSession();
+    User user = null;
+    try {
+      IUserMapper mapper = openSession.getMapper(IUserMapper.class);
+      user = mapper.getUserByEmail(email);
+      return user;
+    } finally {
+        openSession.close();
+    }
+  }
   public static List<User> getUsersByRole(Integer id) throws IOException {
     // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
     SqlSession openSession = sqlSessionFactory.openSession();
@@ -73,6 +85,19 @@ public class DBConnection {
         openSession.close();
     }
   }
+
+  public static int addUser(User user) throws IOException {
+    SqlSession openSession = sqlSessionFactory.openSession();
+    // List<User> users = null;
+    try {
+      IUserMapper mapper = openSession.getMapper(IUserMapper.class);
+      return mapper.addUser(user);
+    } finally {
+        openSession.commit();
+        openSession.close();
+    }
+  }
+
 
   // passages
   public static Passage getPassageById(String id) throws IOException {

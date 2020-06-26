@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/theme/index.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+
+    <script src="/js/vue.js"></script>
+    <script src="/js/ele.js"></script>
+    <script src="/js/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <el-container id="all-container">
+      <el-header id="navigation-container">
+        <el-row :gutter="0" >
+          <el-col :span="6">
+            <div id="folder-container" @click="collSider=!collSider"><i :class="{'primary-color':collSider, 'el-icon-s-fold': !collSider,'el-icon-s-unfold':collSider}"></i></div><a href="#" id="icon-title">Core Force NEWS</a>
+          </el-col>
+          <el-col :span="12">
+          </el-col>
+          <el-col :span="6"  v-show="userConfig" >
+            <div id="avatar-container" @mouseenter.self="userInfoCol=false" @mouseleave.self="userInfoCol=true" >
+              <el-avatar fit="fill" :size="50" src="/res/img/avatar.jpg"></el-avatar>
+              <div id="user-info-container">
+                <el-menu
+                  id="user-info-menu"
+                  mode="vertical"
+                  :collapse="false"
+                  v-show="!userInfoCol">
+                  <el-menu-item index="1"><i class="el-icon-user-solid  primary-color"></i>个人中心</el-menu-item>
+                  <el-menu-item index="2"><i class="el-icon-s-flag  primary-color"></i>操作历史</el-menu-item>
+                  <el-menu-item index="3"><i class="el-icon-finished bold primary-color"></i>统计</el-menu-item>
+                  <el-menu-item index="4"><i class="el-icon-s-tools  primary-color"></i>设定</el-menu-item>
+
+                </el-menu>
+              </div>
+            </div>
+            
+          </el-col>
+        </el-row>
+      </el-header>
+      <el-container id="main-container" style="background-color:rgba(0, 107, 153, 0.062)">
+        <el-col :span="9"></el-col>
+        <el-col :span="6" >
+            <div id="form-container">
+              <div id="form-title">Core Force后台系统</div>
+              <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" class="demo-ruleForm" act>
+                <el-form-item  prop="age">
+                  <el-input v-model.number="ruleForm.age">
+                    <template slot="prepend">账 号</template>
+                  </el-input>
+                </el-form-item>
+                <el-form-item prop="pass">
+                  <el-input type="password" v-model="ruleForm.pass" autocomplete="off">
+                    <template slot="prepend" :width="200" show-password>密 码</template>
+                  </el-input>
+                </el-form-item>
+
+                <el-form-item>
+                  <el-button type="primary" @click="submitForm('ruleForm')">登录</el-button>
+                  <el-button @click="resetForm('ruleForm')" style="float: right;">重置</el-button>
+                </el-form-item>
+              </el-form>
+            </div>
+        </el-col>
+        <el-col :span="9"></el-col>
+
+      </el-container>
+    </el-container>
+    <script>
+      var tb = new Vue({
+        el: '#all-container',
+        data: function() {
+          return { 
+            visible: false,
+            collSider: false,
+            userInfoCol: true,
+            uicConst: true,
+            search: '',
+            userConfig: undefined,
+            ruleForm: {
+            pass: '',
+            checkPass: '',
+            age: ''
+          }
+          }
+        },
+        methods: {
+
+        },
+        mounted() {
+          // this.loading = false;
+        },
+        created() {
+          
+        },
+      });
+      // tb.fetchData();
+      // document.onload = () => {tb.loading = true; }
+    </script>
+  </body>
+</html>

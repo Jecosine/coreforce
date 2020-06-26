@@ -8,7 +8,7 @@ public class Passage {
   private String thumb;
   private String part_id;
   private String datetime;
-
+  private String content;
   public String getUid() {
     return uid;
   }
@@ -84,6 +84,21 @@ public class Passage {
      */
     public void setPid(String pid) {
         this.pid = pid;
+    }
+
+
+    /**
+     * @return String return the content
+     */
+    public String getContent() {
+        return content;
+    }
+
+    /**
+     * @param content the content to set
+     */
+    public void setContent(String content) {
+        this.content = content;
     }
 
 }

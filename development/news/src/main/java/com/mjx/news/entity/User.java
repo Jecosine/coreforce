@@ -9,33 +9,18 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class User {
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
-  private String id;
+  private String uid;
 
-  private String name;
+  private String realname;
   private String role_id;
 
   private String email;
-
-  public User(String id, String name){
-    this.id = id;
-    this.name = name;
+  private String password;
+  private String phone;
+  public User(String id, String realname){
+    this.uid = id;
+    this.realname = realname;
   }
-  public String getId() {
-    return id;
-  }
-
-  public void setId(String id) {
-    this.id = id;
-  }
-
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
   public String getEmail() {
     return email;
   }
@@ -51,4 +36,64 @@ public class User {
   public void setRole_id(String role_id) {
     this.role_id = role_id;
   }
+
+    /**
+     * @return String return the uid
+     */
+    public String getUid() {
+        return uid;
+    }
+
+    /**
+     * @param uid the uid to set
+     */
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
+
+
+    /**
+     * @return String return the password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * @param password the password to set
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+
+    /**
+     * @return String return the phone
+     */
+    public String getPhone() {
+        return phone;
+    }
+
+    /**
+     * @param phone the phone to set
+     */
+    public void setPhone(String phone) {
+        this.phone = phone; 
+    }
+
+
+    /**
+     * @return String return the realname
+     */
+    public String getRealname() {
+        return realname;
+    }
+
+    /**
+     * @param realname the realname to set
+     */
+    public void setRealname(String realname) {
+        this.realname = realname;
+    }
+
 }
