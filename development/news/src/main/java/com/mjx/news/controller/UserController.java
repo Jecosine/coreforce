@@ -17,6 +17,8 @@ import java.util.concurrent.atomic.AtomicLong;
 import com.mjx.news.mapper.*;
 import com.mjx.news.entity.*;
 import com.mjx.news.service.*;
+import org.springframework.web.bind.annotation.RequestBody;
+
 @RestController
 
 @RequestMapping("/user")
@@ -36,5 +38,12 @@ public class UserController {
     List<User> users = DBConnection.getAllUsers();
 		return users;
   }
+  @PostMapping(value="/setUser")
+  public void postMethodName(@RequestBody SomeEnityData entity) {
+      //TODO: process POST request
+      
+      return entity;
+  }
+  
 
 }

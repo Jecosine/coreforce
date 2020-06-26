@@ -36,11 +36,6 @@ public class DBConnection {
     }
     
   }
-  // public static SqlSessionFactory getSqlSessionFactory() throws IOException {
-  //   String resource = "Configuration.xml";
-  //   InputStream inputStream = Resources.getResourceAsStream(resource);
-  //   return new SqlSessionFactoryBuilder().build(inputStream);
-  // }
   // users
   public static User getUserById(String id) throws IOException {
     // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
