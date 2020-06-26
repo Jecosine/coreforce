@@ -58,7 +58,7 @@
               <div id="form-title">Core Force后台系统</div>
               <el-form :model="ruleForm" status-icon  ref="ruleForm" class="demo-ruleForm" >
                 <el-form-item  prop="age">
-                  <el-input v-model.number="ruleForm.email">
+                  <el-input v-model.number="ruleForm.email" autocomplete>
                     <template slot="prepend">账 号</template>
                   </el-input>
                 </el-form-item>
@@ -111,7 +111,7 @@
                 "password":that.ruleForm.password
               };
             $.ajax({
-              url: "/loginService",
+              url: "/user/loginService",
               type: "POST",
               contentType: "application/json",
               data: JSON.stringify(dt),
@@ -121,7 +121,7 @@
               if (res.status && res.status != 0)
                 that.dialogVisible = true;
               else {
-                window.location.href = "/admin";
+                window.location.href = "/admin/todo";
               }
             });
           },

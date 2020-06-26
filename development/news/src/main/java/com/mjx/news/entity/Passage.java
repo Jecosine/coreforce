@@ -3,6 +3,7 @@ package com.mjx.news.entity;
 public class Passage {
   private String pid;
   private String uid;
+  private String username;
   private String title;
   private Integer view, agree;
   private String thumb;
@@ -99,6 +100,21 @@ public class Passage {
      */
     public void setContent(String content) {
         this.content = content;
+    }
+
+
+    /**
+     * @return String return the username
+     */
+    public String getUsername() {
+        return username;
+    }
+
+    /**
+     * @param username the username to set
+     */
+    public void setUsername(String username) {
+        this.username = username;
     }
 
 }

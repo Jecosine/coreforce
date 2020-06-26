@@ -1,7 +1,15 @@
 package com.mjx.news.mapper;
+
 import java.util.List;
+
+// import javax.persistence.FetchType;
+
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Result;
+import org.apache.ibatis.annotations.Results;
+import org.apache.ibatis.annotations.One;
+import org.apache.ibatis.mapping.FetchType;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import com.mjx.news.entity.*;
@@ -18,9 +26,17 @@ public interface IPassageMapper {
   // get all passage
   @Select("select * from passage")
   public List<Passage> getAllPassages();
+
+  @Select("select passage.*, user.realname as username from passage,user where passage.uid=user.uid")
+  // @Results({
+  //   @Result(id=true, property = "pid", column = "pid"),
+  //   @Result(column="uid", property="username",javaType = String.class, 
+  //   one=@One(select="com.mjx.news.mapper.IUserMapper.getUsernameById", fetchType=FetchType.EAGER))
+  // })
+  public List<Passage> getAllInfos();
   // get passage by part
   @Select("select * from passage where part_id=#{id}")
-  public List<Passage> getPassageByPart(int id);
+  public List<Passage> getPassageByPart(int id); 
 
 
   // @Select("select * from ")

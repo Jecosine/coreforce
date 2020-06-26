@@ -94,20 +94,28 @@
         <el-row :gutter="0">
           <el-col :span="6"></el-col>
           <el-col :span="18" id="main-wrapper">
-              <el-input
+            <el-row class="header-button">
+              <el-col :span="6">
+                <el-button type="danger" icon="el-icon-delete" size="mini">批量删除</el-button>
+                <!-- <el-button type="success" icon="el-icon-document-checked" size="mini">批量完成</el-button> -->
+              </el-col>
+              <el-col :span="18">
+                <el-input
                 class="data-tb"
                 id="table-filter"
                 v-model="search"
                 size="mini"
                 prefix-icon="el-icon-search"
-                placeholder="输入关键字搜索"></el-input>
+                placeholder="筛选用户"></el-input>
+              </el-col>
+              </el-row>
             <template>              
               <el-table
-                :data="tableData.filter(data => !search || data.title.toLowerCase().includes(search.toLowerCase())).slice((currentPage-1)*pagesize,currentPage*pagesize)"
+                :data="tableData.filter(data => !search || data.name.toLowerCase().includes(search.toLowerCase())).slice((currentPage-1)*pagesize,currentPage*pagesize)"
                 style="width: 100%"              
                 v-loading="loading"
                 ref="multipleTable"
-                :default-sort="{prop:'datetime', order:'descending'}"
+                :default-sort="{prop:'date', order:'descending'}"
                 @selection-change="handleSelectionChange"
                 >
                 <el-table-column
@@ -116,40 +124,36 @@
                 </el-table-column>
                 <el-table-column
                   fixed
-                  prop="datetime"
-                  label="日期时间"
-                  width="150">
+                  prop="date"
+                  label="账户名"
+                  width="200">
                 </el-table-column>
                 <el-table-column
-                  prop="username"
-                  label="作者"
-                  width="150">
+                  prop="name"
+                  label="姓名"
+                  width="200">
                 </el-table-column>
                 <el-table-column
-                  prop="title"
-                  label="标题"
-                  width="500">
+                  prop="province"
+                  label="角色"
+                  width="200">
                 </el-table-column>
                 <el-table-column
-                  prop="part_id"
-                  label="所属专栏"
+                  prop="city"
+                  label="权限过期时间"
                   width="150">
-                  <template slot-scope="scope">
-                    <div slot="reference" class="name-wrapper">
-                      <el-tag size="medium">{{ parts[parseInt(scope.row.part_id)-1].label }}</el-tag>
-                    </div>
-                  </template>
                 </el-table-column>
                 <el-table-column
                   label="操作"
                   width="400">
                   <template slot-scope="scope">
-                    <!-- <el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>
-                    <el-button type="text" size="small">编辑</el-button> -->
                     <el-button @click="handleClick(scope.row)" plain size="small" icon="el-icon-view">查看</el-button>
                     <el-button icon="el-icon-edit" type="primary" size="small">编辑</el-button>
                     <el-button icon="el-icon-delete" type="danger" size="small">删除</el-button>
-                    <el-button icon="el-icon-data-analysis" type="success" size="small">统计</el-button>
+                    <!-- <el-button icon="el-icon-data-analysis" type="success" size="small">统计</el-button> -->
+                    <!-- <el-button icon="el-icon-document-checked" type="success" size="small">完成</el-button> -->
+
+
                   </template>
                 </el-table-column>
               </el-table>
@@ -184,20 +188,7 @@
             currentPage: 1,
             loading: false,
             pagesize: 15,
-            search: '',
-            parts: [{
-              value: 1,
-              label: "体育"
-            },{
-              value: 2,
-              label: "财经"
-            },{
-              value: 3,
-              label: "科技"
-            },{
-              value: 4,
-              label: "教育"
-            }]
+            search: ''
           }
         },
         methods: {
@@ -218,19 +209,28 @@
             var that = this;
             var tempdata;
             tempdata = $.ajax({
-              url: "/passage/getInfo",
+              url: "/res/json/data.json",
               method: "GET",
               async: false
             }).then((res)=>{
               that.loading = false;
               console.log(res);
               setTimeout(()=>{
-                tb.tableData = res == null ? [] : res;
+                tb.tableData = res.tableData == null ? [] : res.tableData;
                 tb.loading = false;
-                tb.total = tb.tableData.length;                
+                tb.total = tb.tableData.length;
+                
                 console.log(tb.tableData.length);
               }, 1000);
             });
+            
+
+            
+            // setTimeout(()=>{
+            //   that.loading = false;
+            //   console.log(that.loading);
+            // }, 1000);
+            
           },
           currentChange: (page) => {
             tb.currentPage = page;

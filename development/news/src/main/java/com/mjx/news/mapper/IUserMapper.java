@@ -15,6 +15,8 @@ public interface IUserMapper {
   public int updateUser(User user);
   @Select("select * from user where uid=#{id}")
   public User getUserById(String id);
+  @Select("select username from user where uid=#{id}")
+  public String getUsernameById(String id);
   @Select("select * from user where email=#{email}")
   public User getUserByEmail(String email);
   // get all user

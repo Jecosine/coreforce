@@ -136,7 +136,18 @@ public class DBConnection {
         openSession.close();
     }
   }
-
+  public static List<Passage> getAllInfos() throws IOException {
+    // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+    SqlSession openSession = sqlSessionFactory.openSession();
+    List<Passage> passages = null;
+    try {
+      IPassageMapper mapper = openSession.getMapper(IPassageMapper.class);
+      passages = mapper.getAllInfos();
+      return passages;
+    } finally {
+        openSession.close();
+    }
+  }
   // todos
   public static TodoItem getTodoItemById(Integer id) throws IOException {
     // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();

@@ -33,7 +33,7 @@ public class MainController {
 		return "pages/admin-login.html";
 	}
 
-  @RequestMapping("/") 
+  @RequestMapping("/todo") 
   public String mainpage(HttpServletRequest request, HttpServletResponse response) throws IOException {
     HttpSession session = request.getSession(false);
     if (session != null && session.getAttribute("user") != null) {
@@ -43,8 +43,19 @@ public class MainController {
     return "redirect:/admin/login";
   }
   @RequestMapping("/editProfile")
-  public String getUser1() throws IOException{
+  public String editProfile() throws IOException{
 		return "pages/admin-edituser.html";
   }
-  // @RequestMapping("")
+  @RequestMapping("/docs")
+  public String manageDoc() throws IOException{
+		return "pages/admin-docs.html";
+  }
+  @RequestMapping("/users")
+  public String manageUser() throws IOException{
+		return "pages/admin-user.html";
+  }
+  @RequestMapping("/edit")
+  public String editPassage() throws IOException{
+		return "pages/admin-edit.html";
+  }
 }
