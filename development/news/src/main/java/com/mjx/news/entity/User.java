@@ -3,22 +3,28 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity // This tells Hibernate to make a table out of this class
 public class User {
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
-  private Integer id;
+  private String id;
 
   private String name;
+  private String role_id;
 
   private String email;
 
-  public Integer getId() {
+  public User(String id, String name){
+    this.id = id;
+    this.name = name;
+  }
+  public String getId() {
     return id;
   }
 
-  public void setId(Integer id) {
+  public void setId(String id) {
     this.id = id;
   }
 
@@ -36,5 +42,13 @@ public class User {
 
   public void setEmail(String email) {
     this.email = email;
+  }
+
+  public String getRole_id() {
+    return role_id;
+  }
+
+  public void setRole_id(String role_id) {
+    this.role_id = role_id;
   }
 }

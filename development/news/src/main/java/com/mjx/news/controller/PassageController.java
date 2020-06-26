@@ -19,9 +19,9 @@ import com.mjx.news.entity.*;
 import com.mjx.news.service.*;
 @RestController
 
-@RequestMapping("/user")
-public class UserController {
-  @GetMapping("/getUserById")
+@RequestMapping("/passage")
+public class PassageController {
+  @GetMapping("/getPassageById")
   public User getUserById(@RequestParam String id) throws IOException {
     User user = DBConnection.getUserById(id);
 		return user;
