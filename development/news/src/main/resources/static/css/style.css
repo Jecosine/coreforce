@@ -196,6 +196,25 @@
 .el-table .success-row {
   background: #f0f9eb;
 }
+.el-table .danger-row {
+  background: #f9ebeb;
+}
+.el-table .warning-tag {
+  background: oldlace;
+  border-color: rgb(252, 165, 3);
+  color: rgb(252, 165, 3);
+}
+
+.el-table .success-tag {
+  background: #f0f9eb;
+  border-color: #59ff00;
+  color: #59ff00;
+}
+.el-table .danger-tag {
+  background: #f9ebeb;
+  border-color: #ff0202;
+  color: #ff0202;
+}
 
 .header-button {
   width: 100%;

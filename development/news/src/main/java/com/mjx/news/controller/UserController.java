@@ -3,6 +3,7 @@ package com.mjx.news.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -27,24 +28,24 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 
-// @RequestMapping("/user")
+@RequestMapping("/user")
 public class UserController {
-  @GetMapping("/getUserById")
+  @GetMapping("/getById")
   public User getUserById(@RequestParam String id) throws IOException {
     User user = DBConnection.getUserById(id);
 		return user;
 	}
-  @GetMapping("/getUsersByRole")
+  @GetMapping("/getByRole")
   public List<User> getUsersByRole(@RequestParam Integer id) throws IOException {
     List<User> users = DBConnection.getUsersByRole(id);
 		return users;
   }
-  @GetMapping("/getAllUsers")
+  @GetMapping("/getAll")
   public List<User> getUsersByRole() throws IOException {
     List<User> users = DBConnection.getAllUsers();
 		return users;
   }
-  @PostMapping(value="/addUser")
+  @PostMapping(value="/add")
   // @ResponseBody 
   public User addUser(@RequestBody User user) throws IOException{
       //TODO: process POST request\
@@ -53,7 +54,7 @@ public class UserController {
       return user;
   }
 
-  @PostMapping(value="/deleteUser")
+  @PostMapping(value="/deleteById")
   public int delUser(@RequestParam String id) throws IOException{
     return 1;
   }

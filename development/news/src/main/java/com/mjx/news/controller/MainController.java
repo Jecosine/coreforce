@@ -25,23 +25,26 @@ import com.mjx.news.service.*;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
-
+@RequestMapping("/admin")
 public class MainController {
   // login
-  @RequestMapping("/adminlogin")
+  @RequestMapping("/login")
   public String hello()  {    
 		return "pages/admin-login.html";
 	}
 
-  @RequestMapping("/admin") 
+  @RequestMapping("/") 
   public String mainpage(HttpServletRequest request, HttpServletResponse response) throws IOException {
     HttpSession session = request.getSession(false);
     if (session != null && session.getAttribute("user") != null) {
       System.out.println(((User)session.getAttribute("user")).getEmail());
       return "pages/admin-todos.html";
     }
-    return "redirect:/adminlogin";
+    return "redirect:/admin/login";
   }
-
+  @RequestMapping("/editProfile")
+  public String getUser1() throws IOException{
+		return "pages/admin-edituser.html";
+  }
   // @RequestMapping("")
 }

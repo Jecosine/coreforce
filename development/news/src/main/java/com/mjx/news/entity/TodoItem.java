@@ -4,8 +4,8 @@ public class TodoItem {
   private Integer todo_id;
   private String uid;
   private String title;
-  private String startDate;
-  private String endDate;
+  private String start_date;
+  private String end_date;
   private int tag;
   private String content;
   private int state;
@@ -41,30 +41,6 @@ public class TodoItem {
     /**
      * @return String return the startDate
      */
-    public String getStartDate() {
-        return startDate;
-    }
-
-    /**
-     * @param startDate the startDate to set
-     */
-    public void setStartDate(String startDate) {
-        this.startDate = startDate;
-    }
-
-    /**
-     * @return String return the endDate
-     */
-    public String getEndDate() {
-        return endDate;
-    }
-
-    /**
-     * @param endDate the endDate to set
-     */
-    public void setEndDate(String endDate) {
-        this.endDate = endDate;
-    }
 
     /**
      * @return int return the tag
@@ -122,6 +98,35 @@ public class TodoItem {
      */
     public void setTodo_id(Integer todo_id) {
         this.todo_id = todo_id;
+    }
+
+
+    /**
+     * @return String return the start_date
+     */
+    public String getStart_date() {
+        return start_date;
+    }
+
+    /**
+     * @param start_date the start_date to set
+     */
+    public void setStart_date(String start_date) {
+        this.start_date = start_date;
+    }
+
+    /**
+     * @return String return the end_date
+     */
+    public String getEnd_date() {
+        return end_date;
+    }
+
+    /**
+     * @param end_date the end_date to set
+     */
+    public void setEnd_date(String end_date) {
+        this.end_date = end_date;
     }
 
 }

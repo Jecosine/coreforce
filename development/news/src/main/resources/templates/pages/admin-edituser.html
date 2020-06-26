@@ -48,7 +48,6 @@
           <el-menu-item index="2" >
             <i class="el-icon-bell bold primary-color"></i><span slot="title" class="sider-item">消息通知</span>
           </el-menu-item>
-
           <el-menu-item index="3" >
             <i class="el-icon-setting bold primary-color"></i><span slot="title" class="sider-item">设置</span>
           </el-menu-item>
@@ -78,7 +77,6 @@
           </el-submenu>
           <el-submenu index="7" >
             <template slot="title">
-
               <i class="el-icon-finished bold primary-color"></i>
               <span slot="title" class="sider-item">统计</span>
             </template>
@@ -137,22 +135,19 @@
                         <img width="100%" :src="dialogImageUrl" alt="">
                       </el-dialog>
                     </el-form-item>
-                    <el-form-item label="用户名" ><el-input v-model="form.title"></el-input></el-form-item>
-                    <el-form-item label="密码" ><el-input v-model="form.title" show-password type="password"></el-input></el-form-item>
-
-                    <el-form-item label="真实姓名" inline ><el-input v-model="form.author"></el-input></el-form-item>
-
+                    <el-form-item label="用户名" ><el-input v-model="form.email"></el-input></el-form-item>
+                    <el-form-item label="密码" ><el-input v-model="form.password" show-password type="password"></el-input></el-form-item>
+                    <el-form-item label="真实姓名" inline ><el-input v-model="form.realname"></el-input></el-form-item>
                     <el-form-item label="分区权限">
-                      <el-checkbox v-for="part in parts" :label="part.value" :key="part.value">{{part.label}}</el-checkbox>
+                      <el-checkbox v-for="part in parts" :label="part.value" :key="part.role">{{part.label}}</el-checkbox>
                     </el-form-item>
                     <el-form-item label="角色职位">
                       <el-radio-group v-model="selectedRole">
                         <el-radio v-for="(role,index) in roles" :label="index">{{role}}</el-radio>
-
                       </el-radio-group>
                     </el-form-item>
                     <el-form-item label="权限到期">
-                      <el-date-picker type="date" placeholder="选择日期" v-model="form.date" style="width: 100%;"></el-date-picker>
+                      <el-date-picker type="date" placeholder="选择日期" v-model="form.expired" style="width: 100%;"></el-date-picker>
                     </el-form-item>
                     <!-- </el-form-item> -->
                   </el-col>
@@ -162,7 +157,6 @@
                 <div id="bottom-button-container">
                   <el-button type="primary" icon="el-icon-s-promotion">提交</el-button>
                   <el-button  icon="el-icon-error">放弃更改</el-button>
-
                 </div>
               </el-form>
             </el-container>
@@ -177,6 +171,7 @@
         el: '#all-container',
         data: function() {
           return { 
+            curId: this.getId(),
             selectedRole: undefined,
             infoActive: "1",
             visible: false,
@@ -222,6 +217,19 @@
           }
         },
         methods: {
+          getId: ()=> {
+            var that = this;
+            var str=window.location.search;
+            if (str.indexOf("id")!=-1){           
+              var pos_start=str.indexOf("id")+"id".length+1;
+              var pos_end=str.indexOf("&",pos_start);
+              if (pos_end==-1){
+                return str.substring(pos_start);
+              }else{
+                return null;
+              }
+            }
+          },
           handlePictureCardPreview(file) {
             this.dialogImageUrl = file.url;
             this.dialogVisible = true;
@@ -230,10 +238,8 @@
             this.titleAvatar = URL.createObjectURL(file.raw);
           },
           beforeAvatarUpload(file) {
-            const isValid = file.type === 'image/jpeg' || file.type === 'image/png';
-            
+            const isValid = file.type === 'image/jpeg' || file.type === 'image/png';            
             const isLt2M = file.size / 1024 / 1024 < 2;
-
             if (!isValid) {
               this.$message.error('上传头像图片只能是 JPG/PNG 格式!');
             }
@@ -260,22 +266,19 @@
             var that = this;
             var tempdata;
             tempdata = $.ajax({
-              url: "/res/json/data.json",
+              url: "/user/getById" + window.location.search,
               method: "GET",
               async: false
             }).then((res)=>{
               that.loading = false;
               console.log(res);
               setTimeout(()=>{
-                tb.tableData = res.tableData == null ? [] : res.tableData;
-                tb.loading = false;
-                tb.total = tb.tableData.length;
-                
-                console.log(tb.tableData.length);
+                tb.form = res == null ? [] : res;
+                tb.loading = false;                
+                console.log(tb.form);
               }, 1000);
             });
             
-
             
             // setTimeout(()=>{
             //   that.loading = false;
@@ -289,12 +292,12 @@
           }
         },
         mounted() {
-          this.loading = true;
           this.fetchData();
+          
           // this.loading = false;
         },
         created() {
-          
+          this.loading = true;
         },
       });
       // tb.fetchData();
