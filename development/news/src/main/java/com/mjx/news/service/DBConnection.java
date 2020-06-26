@@ -86,10 +86,35 @@ public class DBConnection {
     Passage passage = null;
     try {
       IPassageMapper mapper = openSession.getMapper(IPassageMapper.class);
-      passage = mapper.getUserById(id);
+      passage = mapper.getPassageById(id);
       return passage;
     } finally {
         openSession.close();
     }
   }
+  public static List<Passage> getPassagesByPart(Integer id) throws IOException {
+    // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+    SqlSession openSession = sqlSessionFactory.openSession();
+    List<Passage> passages = null;
+    try {
+      IPassageMapper mapper = openSession.getMapper(IPassageMapper.class);
+      passages = mapper.getPassageByPart(id);
+      return passages;
+    } finally {
+        openSession.close();
+    }
+  }
+  public static List<Passage> getAllPassages() throws IOException {
+    // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+    SqlSession openSession = sqlSessionFactory.openSession();
+    List<Passage> passages = null;
+    try {
+      IPassageMapper mapper = openSession.getMapper(IPassageMapper.class);
+      passages = mapper.getAllPassages();
+      return passages;
+    } finally {
+        openSession.close();
+    }
+  }
+
 }

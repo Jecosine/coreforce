@@ -18,23 +18,22 @@ import com.mjx.news.mapper.*;
 import com.mjx.news.entity.*;
 import com.mjx.news.service.*;
 @RestController
-
 @RequestMapping("/passage")
 public class PassageController {
   @GetMapping("/getPassageById")
-  public User getUserById(@RequestParam String id) throws IOException {
-    User user = DBConnection.getUserById(id);
-		return user;
+  public Passage getPassageById(@RequestParam String id) throws IOException {
+    Passage passage = DBConnection.getPassageById(id);
+		return passage;
 	}
-  @GetMapping("/getUsersByRole")
-  public List<User> getUsersByRole(@RequestParam Integer id) throws IOException {
-    List<User> users = DBConnection.getUsersByRole(id);
-		return users;
+  @GetMapping("/getPassagesByPart")
+  public List<Passage> getPassagesByPart(@RequestParam Integer id) throws IOException {
+    List<Passage> passages = DBConnection.getPassagesByPart(id);
+		return passages;
   }
-  @GetMapping("/getAllUsers")
-  public List<User> getUsersByRole() throws IOException {
-    List<User> users = DBConnection.getAllUsers();
-		return users;
+  @GetMapping("/getAllPassages")
+  public List<Passage> getAllPassages() throws IOException {
+    List<Passage> passages = DBConnection.getAllPassages();
+		return passages;
   }
 
 }

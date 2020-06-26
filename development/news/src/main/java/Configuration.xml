@@ -26,7 +26,7 @@
         </environment>
     </environments>
     <mappers>
-        <!-- <package name="com.mjx.news.mapper"/> -->
-        <mapper class="com.mjx.news.mapper.IUserMapper"/>
+        <package name="com.mjx.news.mapper"/>
+        <!-- <mapper class="com.mjx.news.mapper.IUserMapper"/> -->
     </mappers> 
 </configuration>

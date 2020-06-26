@@ -1,20 +1,13 @@
 package com.mjx.news.entity;
 
 public class Passage {
-  private String id;
+  private String pid;
   private String uid;
   private String title;
   private Integer view, agree;
   private String thumb;
   private String part_id;
   private String datetime;
-  public String getId() {
-    return id;
-  }
-
-  public void setId(String id) {
-    this.id = id;
-  }
 
   public String getUid() {
     return uid;
@@ -76,6 +69,21 @@ public class Passage {
      */
     public void setDatetime(String datetime) {
         this.datetime = datetime;
+    }
+
+
+    /**
+     * @return String return the pid
+     */
+    public String getPid() {
+        return pid;
+    }
+
+    /**
+     * @param pid the pid to set
+     */
+    public void setPid(String pid) {
+        this.pid = pid;
     }
 
 }

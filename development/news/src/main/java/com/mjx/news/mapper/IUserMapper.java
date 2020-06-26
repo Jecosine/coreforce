@@ -11,7 +11,7 @@ public interface IUserMapper {
   public int addUser(User user);
   @Delete("delete from user where id=#{id}")
   public int deleteById(String id);
-  @Update("insert into user(uid, realname, email, role_id) values (#{id}, #{name}, #{email}, #{role_id})")
+  @Update("update user set uid=#{id}, realname=#{name}, email=#{email}, role_id=#{role_id}")
   public int updateUser(User user);
   @Select("select * from user where uid=#{id}")
   public User getUserById(String id);
