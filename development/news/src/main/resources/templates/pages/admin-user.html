@@ -111,11 +111,11 @@
               </el-row>
             <template>              
               <el-table
-                :data="tableData.filter(data => !search || data.name.toLowerCase().includes(search.toLowerCase())).slice((currentPage-1)*pagesize,currentPage*pagesize)"
+                :data="tableData.filter(data => !search || data.realname.toLowerCase().includes(search.toLowerCase())).slice((currentPage-1)*pagesize,currentPage*pagesize)"
                 style="width: 100%"              
                 v-loading="loading"
                 ref="multipleTable"
-                :default-sort="{prop:'date', order:'descending'}"
+                :default-sort="{prop:'role_id', order:'descending'}"
                 @selection-change="handleSelectionChange"
                 >
                 <el-table-column
@@ -124,22 +124,27 @@
                 </el-table-column>
                 <el-table-column
                   fixed
-                  prop="date"
+                  prop="email"
                   label="账户名"
                   width="200">
                 </el-table-column>
                 <el-table-column
-                  prop="name"
+                  prop="realname"
                   label="姓名"
                   width="200">
                 </el-table-column>
                 <el-table-column
-                  prop="province"
+                  prop="role_id"
                   label="角色"
                   width="200">
+                  <template slot-scope="scope">
+                    <div slot="reference" class="name-wrapper">
+                      <el-tag size="medium">{{ roles[parseInt(scope.row.role_id)-1] }}</el-tag>
+                    </div>
+                  </template>
                 </el-table-column>
                 <el-table-column
-                  prop="city"
+                  prop="expired"
                   label="权限过期时间"
                   width="150">
                 </el-table-column>
@@ -148,7 +153,7 @@
                   width="400">
                   <template slot-scope="scope">
                     <el-button @click="handleClick(scope.row)" plain size="small" icon="el-icon-view">查看</el-button>
-                    <el-button icon="el-icon-edit" type="primary" size="small">编辑</el-button>
+                    <el-button @click="handleEdit(scope.row)" icon="el-icon-edit" type="primary" size="small">编辑</el-button>
                     <el-button icon="el-icon-delete" type="danger" size="small">删除</el-button>
                     <!-- <el-button icon="el-icon-data-analysis" type="success" size="small">统计</el-button> -->
                     <!-- <el-button icon="el-icon-document-checked" type="success" size="small">完成</el-button> -->
@@ -188,10 +193,14 @@
             currentPage: 1,
             loading: false,
             pagesize: 15,
-            search: ''
+            search: '',
+            roles: ["分区编辑","分区总管","账户总管"]
           }
         },
         methods: {
+          handleEdit(row) {
+            window.location.href="/admin/editProfile?id=" + row.uid; 
+          },
           handleSelectionChange(val) {
             this.multipleSelection = val;
             console.log(val)
@@ -209,14 +218,14 @@
             var that = this;
             var tempdata;
             tempdata = $.ajax({
-              url: "/res/json/data.json",
+              url: "/user/getAll",
               method: "GET",
               async: false
             }).then((res)=>{
               that.loading = false;
               console.log(res);
               setTimeout(()=>{
-                tb.tableData = res.tableData == null ? [] : res.tableData;
+                tb.tableData = res == null ? [] : res;
                 tb.loading = false;
                 tb.total = tb.tableData.length;
                 

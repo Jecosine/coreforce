@@ -5,7 +5,12 @@
   text-decoration: none;
   -webkit-font-smoothing: subpixel-antialiased
 }
-
+a:active,
+a:visited,
+a:hover,
+a:link {
+  color: #006B99;
+}
 #all-container {
 }
 #navigation-container {

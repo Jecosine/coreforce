@@ -9,7 +9,6 @@ import com.mjx.news.entity.*;
 public interface ITodoMapper {
   @Insert("insert into todo(todo_id, uid, title, start_date, end_date, tag, content) values (#{todo_id}, #{uid}, #{title}, #{startDate}, #{endDate}, #{tag}, #{content})")
   public int addTodoItem(TodoItem todo);
-
   @Delete("delete from todo where id=#{id}")
   public int deleteById(Integer id);
   @Update("update todo set todo_id=#{todo_id}, title=#{titile}, start_date=#{start_date}, end_date=#{end_date}, tag=#{tag}, content=#{content} where todo_id=#{todo_id}")

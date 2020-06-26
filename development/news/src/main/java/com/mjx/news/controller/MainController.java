@@ -43,23 +43,50 @@ public class MainController {
     return "redirect:/admin/login";
   }
   @RequestMapping("/editProfile")
-  public String editProfile() throws IOException{
-		return "pages/admin-edituser.html";
+  public String editProfile(HttpServletRequest request, HttpServletResponse response) throws IOException{
+		HttpSession session = request.getSession(false);
+    if (session != null && session.getAttribute("user") != null) {
+      System.out.println(((User)session.getAttribute("user")).getEmail());
+      return "pages/admin-edituser.html";
+    }
+    return "redirect:/admin/login";
   }
   @RequestMapping("/docs")
-  public String manageDoc() throws IOException{
-		return "pages/admin-docs.html";
+  public String manageDoc(HttpServletRequest request, HttpServletResponse response) throws IOException{
+    HttpSession session = request.getSession(false);
+    if (session != null && session.getAttribute("user") != null) {
+      System.out.println(((User)session.getAttribute("user")).getEmail());
+      return "pages/admin-docs.html";
+    }
+    return "redirect:/admin/login";
+		
   }
   @RequestMapping("/users")
-  public String manageUser() throws IOException{
-		return "pages/admin-user.html";
+  public String manageUser(HttpServletRequest request, HttpServletResponse response) throws IOException{
+    HttpSession session = request.getSession(false);
+    if (session != null && session.getAttribute("user") != null) {
+      System.out.println(((User)session.getAttribute("user")).getEmail());
+      return "pages/admin-user.html";
+
+    }
+    return "redirect:/admin/login";
   }
   @RequestMapping("/edit")
-  public String editPassage() throws IOException{
-		return "pages/admin-edit.html";
+  public String editPassage(HttpServletRequest request, HttpServletResponse response) throws IOException{
+    HttpSession session = request.getSession(false);
+    if (session != null && session.getAttribute("user") != null) {
+      System.out.println(((User)session.getAttribute("user")).getEmail());
+      return "pages/admin-edit.html";
+    }
+    return "redirect:/admin/login";
   }
   @RequestMapping("/view")
-  public String viewData() throws IOException{
-		return "pages/admin-docdata.html";
+  public String viewData(HttpServletRequest request, HttpServletResponse response) throws IOException{
+    HttpSession session = request.getSession(false);
+    if (session != null && session.getAttribute("user") != null) {
+      System.out.println(((User)session.getAttribute("user")).getEmail());
+  		return "pages/admin-docdata.html";
+    }
+    return "redirect:/admin/login";
   }
 }
