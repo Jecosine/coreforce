@@ -233,3 +233,9 @@
 .demo-table-expand .el-input.is-disabled .el-input__inner {
   cursor: default;
 }
+#main-chart {
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  height: 500px;
+}

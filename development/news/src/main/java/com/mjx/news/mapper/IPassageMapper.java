@@ -28,16 +28,15 @@ public interface IPassageMapper {
   public List<Passage> getAllPassages();
 
   @Select("select passage.*, user.realname as username from passage,user where passage.uid=user.uid")
-  // @Results({
-  //   @Result(id=true, property = "pid", column = "pid"),
-  //   @Result(column="uid", property="username",javaType = String.class, 
-  //   one=@One(select="com.mjx.news.mapper.IUserMapper.getUsernameById", fetchType=FetchType.EAGER))
-  // })
   public List<Passage> getAllInfos();
+  @Select("select passage.*, user.realname as username from passage,user where passage.uid=user.uid and passage.pid=#{id}") 
+  public Passage getInfoById(String id); 
   // get passage by part
   @Select("select * from passage where part_id=#{id}")
   public List<Passage> getPassageByPart(int id); 
-
+  //get data
+  @Select("select date as x,count as y from passage_log where pid=#{id} order by date") 
+  public List<DataFrame> getData(String id); 
 
   // @Select("select * from ")
 }

@@ -58,4 +58,8 @@ public class MainController {
   public String editPassage() throws IOException{
 		return "pages/admin-edit.html";
   }
+  @RequestMapping("/view")
+  public String viewData() throws IOException{
+		return "pages/admin-docdata.html";
+  }
 }

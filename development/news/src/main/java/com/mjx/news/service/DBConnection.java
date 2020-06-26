@@ -17,6 +17,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
+
+import javax.xml.crypto.Data;
+
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -136,6 +139,18 @@ public class DBConnection {
         openSession.close();
     }
   }
+  public static Passage getInfoById(String id) throws IOException {
+    // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+    SqlSession openSession = sqlSessionFactory.openSession();
+    Passage passage = null;
+    try {
+      IPassageMapper mapper = openSession.getMapper(IPassageMapper.class);
+      passage = mapper.getInfoById(id);
+      return passage;
+    } finally {
+        openSession.close();
+    }
+  }
   public static List<Passage> getAllInfos() throws IOException {
     // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
     SqlSession openSession = sqlSessionFactory.openSession();
@@ -144,6 +159,19 @@ public class DBConnection {
       IPassageMapper mapper = openSession.getMapper(IPassageMapper.class);
       passages = mapper.getAllInfos();
       return passages;
+    } finally {
+        openSession.close();
+    }
+  }
+  public static List<DataFrame> getData(String id) throws IOException {
+    // SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+    SqlSession openSession = sqlSessionFactory.openSession();
+    List<DataFrame> data;
+    try {
+      IPassageMapper mapper = openSession.getMapper(IPassageMapper.class);
+      System.out.print(id);
+      data = mapper.getData(id);
+      return data;
     } finally {
         openSession.close();
     }

@@ -3,6 +3,7 @@ package com.mjx.news.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,6 +14,9 @@ import com.mjx.news.repository.*;
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
+
+import javax.websocket.server.PathParam;
+
 import com.mjx.news.mapper.*;
 import com.mjx.news.entity.*;
 import com.mjx.news.service.*;
@@ -39,5 +43,22 @@ public class PassageController {
   public List<Passage> getAllInfos() throws IOException {
     List<Passage> passages = DBConnection.getAllInfos();
 		return passages;
+  }
+  
+  @GetMapping("/getInfoById")
+  public Passage getInfo(@RequestParam String id) throws IOException {
+    Passage passage = DBConnection.getInfoById(id);
+		return passage;
+  }
+  // get data
+  // @GetMapping("/getData/{pid}")
+  // public List<DataFrame> getData(@PathVariable String pid) throws IOException {
+  //   List<DataFrame> data = DBConnection.getData(pid);
+  //   return data;
+  // }
+  @GetMapping("/getData")
+  public List<DataFrame> getData1(@RequestParam String pid) throws IOException {
+    List<DataFrame> data = DBConnection.getData(pid);
+    return data;
   }
 }
